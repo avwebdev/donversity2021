@@ -8,6 +8,6 @@ See the wiki on How To Contribute.
 
 ## Run the website
 
-Use these commands:
+After cloning, use these commands:
 
 ### `yarn install` and `yarn start`
