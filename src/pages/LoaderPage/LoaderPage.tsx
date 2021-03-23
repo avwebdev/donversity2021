@@ -20,6 +20,7 @@ export default function LoaderPage() {
 
     return (
         <Fragment>
+            <i className="mdi mdi-loading mdi-spin" id={styles.spinner}></i>
             <div>
                 {pyro}
             </div>
@@ -34,7 +35,7 @@ export default function LoaderPage() {
             </div>
             <div id={styles.loadingMessage}>
                 Did you know: Amador Valley has 15 bathrooms?
-                <i className="mdi mdi-loading mdi-spin" id={styles.spinner}></i>
+                
             </div>
         </Fragment>
     );
