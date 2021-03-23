@@ -14,7 +14,7 @@ export default function LoaderPage() {
     if (!pyroActivated) {
         setTimeout(() => {
             setPyroActivated(true)
-        }, 2000);
+        }, 500);
         pyro = <div className="pyro"></div>
     }
 
@@ -24,7 +24,17 @@ export default function LoaderPage() {
                 {pyro}
             </div>
             <div id={styles.container}>
-                Welcome to donversity 2021!
+                <div>
+                    <h1>Donversity</h1>
+                    <h2>
+                        <span id={styles.schoolName}>AVHS</span>
+                        <span id={styles.year}>2021</span>
+                    </h2>
+                </div>
+            </div>
+            <div id={styles.loadingMessage}>
+                Did you know: Amador Valley has 15 bathrooms?
+                <i className="mdi mdi-loading mdi-spin" id={styles.spinner}></i>
             </div>
         </Fragment>
     );
