@@ -1,0 +1,19 @@
+monday:
+  - title: Its time for the annual club fair!
+    description: To celebrate our diversity of clubs on campus, they created messages for you all to see!
+    content:
+     - type: VideoView
+       link: https://google.com
+       title: testing 1234 
+
+  - title: Its time for the annual club fair!
+    description: To celebrate our diversity of clubs on campus, they created messages for you all to see!
+    content:
+     - type: VideoView
+       link: https://google.com
+       title: VideoView test 2
+
+tuesday:
+wednesday:
+thursday:
+friday:
