@@ -55,4 +55,8 @@
     #container > div > h2 {
         font-size: 2rem;
     }
+
+    #container {
+        height: 85vh;
+    }
 }

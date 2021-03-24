@@ -1,6 +1,8 @@
 import { Fragment, useState } from "react";
 import "./LoaderPage.scss";
 import styles from "./LoaderPage.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCertificate, faCircleNotch, faCog, faSpinner } from '@fortawesome/free-solid-svg-icons'
 
 export default function LoaderPage() {
 
@@ -20,7 +22,7 @@ export default function LoaderPage() {
 
     return (
         <Fragment>
-            <i className="mdi mdi-loading mdi-spin" id={styles.spinner}></i>
+            <FontAwesomeIcon icon={faCircleNotch} id={styles.spinner} spin></FontAwesomeIcon>
             <div>
                 {pyro}
             </div>
