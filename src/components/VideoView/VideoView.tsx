@@ -16,7 +16,7 @@ export default function VideoView({url, description, author, youtubeUrl=false}: 
                   <br />
                   <div className="embed-responsive embed-responsive-16by9 wow fadeInRight">
                   <iframe className="embed-responsive-item" src = {youtubeUrl}
-                          allowFullScreen></iframe>
+                          allowFullScreen title={description}></iframe>
                 </div>
                 <div className={styles.authorTag}><i className="mdi mdi-account-circle"></i>{author}</div>
                 </div>
