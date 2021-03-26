@@ -6,6 +6,7 @@ import VideoView from "./components/VideoView/VideoView";
 import MarkdownView from "./components/MarkdownView/MarkdownView";
 import { Fragment, useState } from "react";
 import { load } from "js-yaml";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const [waitTime, fadeTime] = [3000, 500];
@@ -36,31 +37,34 @@ function App() {
   }
 
   return (
-    <Switch>
-      <Route path="/home">
-        <button type="button" className="btn btn-secondary">
-          Home Page
-        </button>
-      </Route>
-      <Route path="/view/:view">
-        <ViewPage></ViewPage>
-      </Route>
-      <Route path="/about">
-        <About></About>
-      </Route>
-      <Route path="/load">
-        <LoaderPage></LoaderPage>
-      </Route>
-      <Route path="/video-view">
-        <VideoView
-          description="This video showcases Mr. Butterfield in all his glory."
-          youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"
-        ></VideoView>
-      </Route>
-      <Route path="/md-view">
-        <MarkdownView file="sample" />
-      </Route>
-    </Switch>
+    <>
+      <Navbar />
+      <Switch>
+        <Route path="/home">
+          <button type="button" className="btn btn-secondary">
+            Home Page
+          </button>
+        </Route>
+        <Route path="/view/:view">
+          <ViewPage></ViewPage>
+        </Route>
+        <Route path="/about">
+          <About></About>
+        </Route>
+        <Route path="/load">
+          <LoaderPage></LoaderPage>
+        </Route>
+        <Route path="/video-view">
+          <VideoView
+            description="This video showcases Mr. Butterfield in all his glory."
+            youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"
+          ></VideoView>
+        </Route>
+        <Route path="/md-view">
+          <MarkdownView file="sample" />
+        </Route>
+      </Switch>
+    </>
   );
 }
 
