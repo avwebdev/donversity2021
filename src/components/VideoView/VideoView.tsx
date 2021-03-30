@@ -18,7 +18,7 @@ export default function VideoView({url, description, author, youtubeUrl=false}: 
                   <iframe className="embed-responsive-item" src = {youtubeUrl}
                           allowFullScreen></iframe>
                 </div>
-                <div className={styles.authorTag}><i className="mdi mdi-account-circle"></i>{author}</div>
+                <span className={styles.authorTag}><i className="mdi mdi-account-circle" style= {{margin:"3px"}}></i><p className= {styles.name}>{author}</p></span>
                 </div>
                
               </div>
