@@ -15,20 +15,14 @@ export default function VideoView({url, description, author, youtubeUrl=false}: 
                   <p  className = "wow fadeInLeft" data-wow-delay="0.3s"  >{description}</p>
                   <br />
                   <div className="embed-responsive embed-responsive-16by9 wow fadeInRight">
-                  <iframe className="embed-responsive-item" src = {youtubeUrl}
-                          allowFullScreen></iframe>
+                  <iframe className="embed-responsive-item" src = {youtubeUrl} title = "Youtube video" allowFullScreen></iframe>
                 </div>
                 <span className={styles.authorTag}><i className="mdi mdi-account-circle" style= {{margin:"3px"}}></i><p className= {styles.name}>{author}</p></span>
                 </div>
                
               </div>
              
-              {/* <div className="col-lg-6 wow fadeIn">
-                <div className="embed-responsive embed-responsive-16by9 wow fadeInRight">
-                  <iframe className="embed-responsive-item" src = {youtubeUrl}
-                          allowFullScreen></iframe>
-                </div>
-              </div> */}
+              
             </div>
           </div>
   

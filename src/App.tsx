@@ -3,7 +3,8 @@ import ViewPage from "./pages/ViewPage/ViewPage";
 import LoadPage from "./pages/LoaderPage/LoaderPage";
 import About from "./pages/AboutPage/AboutPage";
 import VideoView from "./components/VideoView/VideoView";
-import logo from './logo.svg';
+import LinksView from "./components/LinksView/LinksView";
+// import logo from './logo.svg';
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
         <LoadPage></LoadPage>
       </Route>
       <Route path="/video-view">
-        <VideoView description="This video showcases Mr. Butterfield in all his glory." youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></VideoView>
+        <VideoView  description="This video showcases Mr. Butterfield in all his glory." author ="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></VideoView>
+      </Route>
+      <Route path="/link-view">
+        <LinksView  description="This video showcases Mr. Butterfield in all his glory." hook ="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></LinksView>
       </Route>
     </Switch>
   );

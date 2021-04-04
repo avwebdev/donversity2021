@@ -1,0 +1,18 @@
+
+
+.hook{
+    height: 50px;
+    width:20%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(204, 100%, 50%);
+    background-color: #e4e1e1;
+    opacity: 0.7;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.hook:hover{
+        display: none;
+}
