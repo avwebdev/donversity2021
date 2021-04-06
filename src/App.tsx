@@ -39,9 +39,6 @@ function App() {
 
   return (
     <Switch>
-      <Route path="/">
-        <Navbar></Navbar>
-      </Route>
       <Route path="/view/:view">
         <ViewPage></ViewPage>
       </Route>
@@ -56,6 +53,9 @@ function App() {
       </Route>
       <Route path="/link-view">
         <LinksView title="Some Title" description="This video showcases Mr. Butterfield in all his glory." hook ="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></LinksView>
+      </Route>
+      <Route path="/">
+        <Navbar></Navbar>
       </Route>
     </Switch>
   );
