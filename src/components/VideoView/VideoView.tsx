@@ -1,4 +1,4 @@
-import styles from "./VideoView.module.css"
+import styles from "./VideoView.module.css";
 
 export default function VideoView({url, description, author, youtubeUrl=false}: any) {
       
@@ -19,18 +19,15 @@ export default function VideoView({url, description, author, youtubeUrl=false}: 
                 </div>
                 <span className={styles.authorTag}><i className="mdi mdi-account-circle" style= {{margin:"3px"}}></i><p className= {styles.name}>{author}</p></span>
                 </div>
-               
               </div>
              
               
             </div>
           </div>
-  
+        </div>
       </section>
-      );
-        }
+    );
+  }
 
-        
-        return(<div></div>);
-    
+  return <div></div>;
 }
