@@ -14,7 +14,7 @@ export default function LinksView({title, description, hook, youtubeUrl=false}: 
     <h5 className="card-title">{title}</h5>
    
     <p className="card-text">{description}</p>
-    <a href={youtubeUrl} target={"_blank"} className="card-link">link</a>
+    <a href={youtubeUrl} target={"_blank"} className="card-link" rel="noreferrer">link</a>
     </div> 
      </div>
      </div> 

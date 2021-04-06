@@ -4,11 +4,10 @@ import { LoaderPage, Overlay } from "./pages/LoaderPage/LoaderPage";
 import About from "./pages/AboutPage/AboutPage";
 import VideoView from "./components/VideoView/VideoView";
 import LinksView from "./components/LinksView/LinksView";
+import Navbar from "./components/Navbar/Navbar";
 // import logo from './logo.svg';
-import MarkdownView from "./components/MarkdownView/MarkdownView";
 import { Fragment, useState } from "react";
 import { load } from "js-yaml";
-import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   const [waitTime, fadeTime] = [3000, 500];
@@ -40,8 +39,8 @@ function App() {
 
   return (
     <Switch>
-      <Route path="/home">
-        <button type="button" className="btn btn-secondary">Home Page</button>
+      <Route path="/">
+        <Navbar></Navbar>
       </Route>
       <Route path="/view/:view">
         <ViewPage></ViewPage>
@@ -50,7 +49,7 @@ function App() {
         <About></About>
       </Route>
       <Route path="/load">
-        <LoadPage></LoadPage>
+        <LoaderPage></LoaderPage>
       </Route>
       <Route path="/video-view">
         <VideoView  description="This video showcases Mr. Butterfield in all his glory." author ="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></VideoView>
