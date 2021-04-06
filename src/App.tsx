@@ -25,7 +25,7 @@ function App() {
         <VideoView  description="This video showcases Mr. Butterfield in all his glory." author ="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></VideoView>
       </Route>
       <Route path="/link-view">
-        <LinksView  description="This video showcases Mr. Butterfield in all his glory." hook ="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></LinksView>
+        <LinksView title="Some Title" description="This video showcases Mr. Butterfield in all his glory." hook ="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></LinksView>
       </Route>
     </Switch>
   );
