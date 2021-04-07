@@ -8,8 +8,11 @@ import Navbar from "./components/Navbar/Navbar";
 // import logo from './logo.svg';
 import { Fragment, useState } from "react";
 import { load } from "js-yaml";
+import React from "react";
+import { DataContext } from "./misc/DataContext";
 
 function App() {
+
   const [waitTime, fadeTime] = [3000, 500];
   const [data, setData] = useState({});
   const [fadingOut, setFadingOut] = useState(false);
@@ -38,26 +41,28 @@ function App() {
   }
 
   return (
-    <Switch>
-      <Route path="/view/:view">
-        <ViewPage></ViewPage>
-      </Route>
-      <Route path="/about">
-        <About></About>
-      </Route>
-      <Route path="/load">
-        <LoaderPage></LoaderPage>
-      </Route>
-      <Route path="/video-view">
-        <VideoView  description="This video showcases Mr. Butterfield in all his glory." author ="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></VideoView>
-      </Route>
-      <Route path="/link-view">
-        <LinksView title="Some Title" description="This video showcases Mr. Butterfield in all his glory." hook ="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></LinksView>
-      </Route>
-      <Route path="/">
-        <Navbar></Navbar>
-      </Route>
-    </Switch>
+    <DataContext.Provider value={data}>
+      <Switch>
+        <Route path="/view/:view">
+          <ViewPage></ViewPage>
+        </Route>
+        <Route path="/about">
+          <About></About>
+        </Route>
+        <Route path="/load">
+          <LoaderPage></LoaderPage>
+        </Route>
+        <Route path="/video-view">
+          <VideoView description="This video showcases Mr. Butterfield in all his glory." author="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></VideoView>
+        </Route>
+        <Route path="/link-view">
+          <LinksView title="Some Title" description="This video showcases Mr. Butterfield in all his glory." hook="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></LinksView>
+        </Route>
+        <Route path="/">
+          <Navbar></Navbar>
+        </Route>
+      </Switch>
+    </DataContext.Provider>
   );
 }
 

@@ -1,31 +1,49 @@
-import { useParams } from "react-router-dom";
-import MarkdownView from "../../components/MarkdownView/MarkdownView";
-import VideoView from "../../components/VideoView/VideoView";
-import styles from "./ViewPage.module.css";
-
-function createHeading(str: string) {
-  const splitStr = str.toLowerCase().replace("-", " ").split(" ");
-
-  for (let i = 0; i < splitStr.length; i++) {
-    splitStr[i] =
-      splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
-  }
-
-  return splitStr.join(" ");
-}
+import { Fragment, useContext } from "react";
+import { Redirect, useLocation } from "react-router-dom";
+import { DataContext } from "../../misc/DataContext";
+import { ContentPage } from "../../types";
+import Navbar from "./../../components/Navbar/Navbar"
+import RenderView from "./RenderView";
 
 export default function ViewPage(props: any) {
-  let { view } = useParams() as Record<string, string>;
+  const data = useContext(DataContext);
+  const pathname = useLocation().pathname;
+
+  const sections = Object.values(data) as ContentPage[][];
+  const currentPage = getCurrentPage(pathname, sections);
+
+  if (!currentPage) {
+    return (
+      <Redirect to="/"></Redirect>
+    )
+  }
+
+  const viewArr = RenderView(currentPage?.content)
+  console.log(viewArr);
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.heading}>{createHeading(view)}</h1>
-      <VideoView
-        description="Sample Video"
-        youtubeUrl="https://www.youtube.com/embed/ZLH1_C-UNHw"
-        author="Sample Author"
-      />
-      <MarkdownView file={view} />
-    </div>
+    <Fragment>
+      <Navbar></Navbar>
+      {viewArr}
+    </Fragment>
   );
+}
+
+
+
+function getCurrentPage(pathname: string, sections: ContentPage[][]) {
+
+  let currentPage: ContentPage | undefined = undefined;
+  for (const section of sections) {
+    if (section) {
+      for (const page of section) {
+        if (page.link === pathname) {
+          currentPage = page;
+          break;
+        }
+      }
+    }
+  }
+
+  return currentPage;
 }
