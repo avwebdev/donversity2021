@@ -1,3 +1,4 @@
+import React from "react";
 import { Switch, Route } from "react-router";
 import ViewPage from "./pages/ViewPage/ViewPage";
 import { LoaderPage, Overlay } from "./pages/LoaderPage/LoaderPage";
@@ -8,11 +9,10 @@ import Navbar from "./components/Navbar/Navbar";
 // import logo from './logo.svg';
 import { Fragment, useState } from "react";
 import { load } from "js-yaml";
-import React from "react";
 import { DataContext } from "./misc/DataContext";
+import MapChart from "./components/Map/Map";
 
 function App() {
-
   const [waitTime, fadeTime] = [3000, 500];
   const [data, setData] = useState({});
   const [fadingOut, setFadingOut] = useState(false);
@@ -53,10 +53,22 @@ function App() {
           <LoaderPage></LoaderPage>
         </Route>
         <Route path="/video-view">
-          <VideoView description="This video showcases Mr. Butterfield in all his glory." author="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></VideoView>
+          <VideoView
+            description="This video showcases Mr. Butterfield in all his glory."
+            author="Keerthi Kalyaan"
+            youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"
+          ></VideoView>
         </Route>
         <Route path="/link-view">
-          <LinksView title="Some Title" description="This video showcases Mr. Butterfield in all his glory." hook="Keerthi Kalyaan" youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"></LinksView>
+          <LinksView
+            title="Some Title"
+            description="This video showcases Mr. Butterfield in all his glory."
+            hook="Keerthi Kalyaan"
+            youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"
+          ></LinksView>
+        </Route>
+        <Route path="/map">
+          <MapChart></MapChart>
         </Route>
         <Route path="/">
           <Navbar></Navbar>
