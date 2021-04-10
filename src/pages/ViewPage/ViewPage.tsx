@@ -2,7 +2,7 @@ import { Fragment, useContext } from "react";
 import { Redirect, useLocation } from "react-router-dom";
 import { DataContext } from "../../misc/DataContext";
 import { ContentPage } from "../../types";
-import Navbar from "./../../components/Navbar/Navbar"
+import Navbar from "./../../components/Navbar/Navbar";
 import RenderView from "./RenderView";
 
 export default function ViewPage(props: any) {
@@ -13,12 +13,10 @@ export default function ViewPage(props: any) {
   const currentPage = getCurrentPage(pathname, sections);
 
   if (!currentPage) {
-    return (
-      <Redirect to="/"></Redirect>
-    )
+    return <Redirect to="/"></Redirect>;
   }
 
-  const viewArr = RenderView(currentPage?.content)
+  const viewArr = RenderView(currentPage?.content);
   console.log(viewArr);
 
   return (
@@ -29,10 +27,7 @@ export default function ViewPage(props: any) {
   );
 }
 
-
-
 function getCurrentPage(pathname: string, sections: ContentPage[][]) {
-
   let currentPage: ContentPage | undefined = undefined;
   for (const section of sections) {
     if (section) {

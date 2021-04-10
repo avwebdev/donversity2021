@@ -1,39 +1,42 @@
-
-
-.hook{
-    height: 50px;
-    width:20%;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: hsl(0, 0%, 3%);
-    background-color: #e4e1e1;
-    opacity: 0.7;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    position: relative;
+.hook {
+  height: 50px;
+  width: 20%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 0%, 3%);
+  background-color: #e4e1e1;
+  opacity: 0.7;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  position: relative;
 }
 
-.hook:hover .cards{
-   display: block;
+.hook:hover .cards {
+  display: block;
 }
 
-.cards{
-    width: 500px;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    display: none;
-   transition-duration: 2s;
-  
-  
+.cards {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  transition-duration: 2s;
 }
 @-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
- }
-
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
