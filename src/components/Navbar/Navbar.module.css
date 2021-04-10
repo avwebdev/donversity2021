@@ -1,5 +1,5 @@
 .burger-wrapper {
-cursor: pointer;
+  cursor: pointer;
 }
 .meny {
   background: #333;
@@ -7,7 +7,7 @@ cursor: pointer;
   height: 100vh;
   position: fixed;
   right: 0;
-  transition-timing-function: cubic-bezier(10,2,3,1);
+  transition-timing-function: cubic-bezier(10, 2, 3, 1);
   transform: translateX(50rem);
   top: 0;
   z-index: 0;
@@ -86,14 +86,12 @@ cursor: pointer;
   margin-right: 1rem;
   min-width: 10rem;
   max-width: 16rem;
-
 }
 
-.daybaby{
+.daybaby {
   display: flex;
   flex-direction: column;
 }
-
 
 .day h2 {
   color: black;
@@ -101,14 +99,14 @@ cursor: pointer;
   text-align: center;
   padding-bottom: 5px;
 }
-img{
+img {
   padding: 0;
   width: 20px;
   height: 20px;
   margin-bottom: 5px;
 }
 
-.img{
+.img {
   margin-left: 10%;
   margin-bottom: 2px;
   display: none;
@@ -121,37 +119,37 @@ img{
   margin-bottom: 10px;
 }
 
-.dot{
+.dot {
   width: 20px;
   height: 20px;
   margin: 0;
   padding: 0;
 }
 
-@media screen and (max-width: 1000px) { 
-  #topRow, #dayContent {
+@media screen and (max-width: 1000px) {
+  #topRow,
+  #dayContent {
     display: grid;
     flex-direction: row;
   }
-  #topRow a{
+  #topRow a {
     margin-bottom: 20px;
   }
-  .day{
+  .day {
     text-align: center;
     margin-bottom: 20px;
   }
-  .daybaby{
+  .daybaby {
     display: flex;
     flex-direction: column;
   }
 
-  img{
+  img {
     display: none;
   }
 
-  .img{
+  .img {
     display: block;
     float: right;
   }
-  
 }

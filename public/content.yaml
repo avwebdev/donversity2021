@@ -4,29 +4,29 @@ monday:
     link: /view/club-fair
     description: To celebrate our diversity of clubs on campus, they created messages for you all to see!
     content:
-     - type: VideoView
-       link: https://google.com
-       title: testing 1234 
-       author: Subha Das
-       description: 1600 Sat BOI
+      - type: VideoView
+        link: https://google.com
+        title: testing 1234
+        author: Subha Das
+        description: 1600 Sat BOI
 
   - title: Sample Page
     navTitle: Sample Page
     description: To celebrate our diversity of clubs on campus, they created messages for you all to see!
     link: "/view/sample"
     content:
-     - type: VideoView
-       link: https://www.youtube.com/embed/ZLH1_C-UNHw
-       title: testing 1234 
-       author: Subha Das
-       description: 1600 Sat BOI
+      - type: VideoView
+        link: https://www.youtube.com/embed/ZLH1_C-UNHw
+        title: testing 1234
+        author: Subha Das
+        description: 1600 Sat BOI
 
-     - type: MarkdownView
-       link: sample
-        
-     - type: LinksView
-       link: https://google.com
-       title: Link to google  
+      - type: MarkdownView
+        link: sample
+
+      - type: LinksView
+        link: https://google.com
+        title: Link to google
 tuesday:
 wednesday:
 thursday:

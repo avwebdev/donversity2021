@@ -1,27 +1,46 @@
 import styles from "./VideoView.module.css";
 
-export default function VideoView({ url, description, author, youtubeUrl = false }: any) {
-
+export default function VideoView({
+  url,
+  description,
+  author,
+  youtubeUrl = false,
+}: any) {
   if (youtubeUrl) {
     return (
       <section>
-
         <div className="container flex-center">
-          <div className="row pt-54 mt-3" >
+          <div className="row pt-54 mt-3">
             <div className="col-lg-6 wow fadeIn mb-5 text-center text-lg-left">
               <div className="white-text">
-                <h1 className="h1-responsive font-weight-bold wow fadeInLeft" data-wow-delay="0.3s">Title</h1>
+                <h1
+                  className="h1-responsive font-weight-bold wow fadeInLeft"
+                  data-wow-delay="0.3s"
+                >
+                  Title
+                </h1>
                 <hr className="hr-light wow fadeInLeft" data-wow-delay="0.3s" />
-                <p className="wow fadeInLeft" data-wow-delay="0.3s"  >{description}</p>
+                <p className="wow fadeInLeft" data-wow-delay="0.3s">
+                  {description}
+                </p>
                 <br />
                 <div className="embed-responsive embed-responsive-16by9 wow fadeInRight">
-                  <iframe className="embed-responsive-item" src={youtubeUrl} title="Youtube video" allowFullScreen></iframe>
+                  <iframe
+                    className="embed-responsive-item"
+                    src={youtubeUrl}
+                    title="Youtube video"
+                    allowFullScreen
+                  ></iframe>
                 </div>
-                <span className={styles.authorTag}><i className="mdi mdi-account-circle" style={{ margin: "3px" }}></i><p className={styles.name}>{author}</p></span>
+                <span className={styles.authorTag}>
+                  <i
+                    className="mdi mdi-account-circle"
+                    style={{ margin: "3px" }}
+                  ></i>
+                  <p className={styles.name}>{author}</p>
+                </span>
               </div>
             </div>
-
-
           </div>
         </div>
       </section>
