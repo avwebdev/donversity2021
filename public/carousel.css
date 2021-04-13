@@ -24,13 +24,21 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+  background-color: #777;
+  justify-content: center;
 }
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: flex;
+}
+
 .carousel-item > img {
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+  top: 5%;
+  height: 18rem;
+  text-align: center;
 }
 
 /* MARKETING CONTENT
