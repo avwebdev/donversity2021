@@ -69,6 +69,11 @@
 
 #container a {
   color: var(--navbar-font-color);
+  text-decoration: none;
+}
+
+#container a:hover {
+    text-decoration: underline;
 }
 
 .brand {
