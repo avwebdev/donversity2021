@@ -2,7 +2,7 @@
   cursor: pointer;
 }
 .meny {
-  background: #333;
+  background: var(--navbar-background-color);
   width: 50rem;
   height: 100vh;
   position: fixed;
@@ -12,6 +12,7 @@
   top: 0;
   z-index: 0;
   transition: 0.5s;
+  overflow-y: scroll;
 }
 .menyAvPaa {
   display: none;
@@ -35,7 +36,7 @@
 
 .burger > div {
   height: 2px;
-  background-color: #000;
+  background-color: var(--navbar-font-color);
   transition: 0.5s;
   z-index: 999;
 }
@@ -67,7 +68,7 @@
 }
 
 #container a {
-  color: black;
+  color: var(--navbar-font-color);
 }
 
 .brand {
@@ -76,80 +77,90 @@
 }
 
 #dayContent {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 2rem;
 }
 
 .day {
   margin-left: 1rem;
   margin-right: 1rem;
-  min-width: 10rem;
-  max-width: 16rem;
-}
-
-.daybaby {
-  display: flex;
-  flex-direction: column;
 }
 
 .day h2 {
-  color: black;
+  color: var(--navbar-font-color);
   font-size: 1.3rem;
   text-align: center;
+  border-bottom: 2px solid var(--navbar-font-color);
   padding-bottom: 5px;
 }
-img {
-  padding: 0;
-  width: 20px;
-  height: 20px;
-  margin-bottom: 5px;
+
+.day i {
+    display: none;
 }
 
-.img {
-  margin-left: 10%;
-  margin-bottom: 2px;
-  display: none;
-}
-
-.day > a {
+.day > span > a {
   display: block;
   text-align: left;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.dot {
-  width: 20px;
-  height: 20px;
-  margin: 0;
-  padding: 0;
+.row {
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
-@media screen and (max-width: 1000px) {
-  #topRow,
-  #dayContent {
-    display: grid;
-    flex-direction: row;
-  }
-  #topRow a {
-    margin-bottom: 20px;
-  }
-  .day {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .daybaby {
-    display: flex;
-    flex-direction: column;
-  }
+@media (max-width: 1000px) {
+    #dayContent {
+        max-width: 100%;
+    }
+    
+}
 
-  img {
-    display: none;
-  }
+@media (max-width: 790px) {
 
-  .img {
-    display: block;
-    float: right;
-  }
+    #dayContent {
+        max-width: 400px;
+    }
+
+    #topRow {
+        max-width: 400px;
+        margin: auto;
+        text-align: left;
+        padding-left: 1em;
+        margin-top: 2em;
+    }
+
+    #topRow a {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .day h2 {
+        border-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .day i {
+        display: block;
+    }
+
+    .day > span {
+        margin-bottom: 30px;
+    }
+
+    .row {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 790px) {
+    .day{
+        min-width: 10rem;
+        max-width: 16rem;
+    }
 }

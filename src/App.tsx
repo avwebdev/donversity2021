@@ -12,6 +12,11 @@ import { load } from "js-yaml";
 import { DataContext } from "./misc/DataContext";
 import MapChart from "./components/Map/Map";
 
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+library.add(fas);
+
 function App() {
   const [waitTime, fadeTime] = [3000, 500];
   const [data, setData] = useState({});
