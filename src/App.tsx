@@ -5,15 +5,14 @@ import { LoaderPage, Overlay } from "./pages/LoaderPage/LoaderPage";
 import About from "./pages/AboutPage/AboutPage";
 import VideoView from "./components/VideoView/VideoView";
 import LinksView from "./components/LinksView/LinksView";
-import Navbar from "./components/Navbar/Navbar";
 // import logo from './logo.svg';
 import { Fragment, useState } from "react";
 import { load } from "js-yaml";
 import { DataContext } from "./misc/DataContext";
 import MapChart from "./components/Map/Map";
-
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import HomePage from "./pages/HomePage/HomePage";
 
 library.add(fas);
 
@@ -76,7 +75,7 @@ function App() {
           <MapChart></MapChart>
         </Route>
         <Route path="/">
-          <Navbar></Navbar>
+          <HomePage></HomePage>
         </Route>
       </Switch>
     </DataContext.Provider>
