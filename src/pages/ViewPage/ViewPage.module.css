@@ -1,8 +1,29 @@
-.container {
-  margin: auto;
-  max-width: 80%;
+#container {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+#container > h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#container > h5 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 .heading {
   text-align: center;
+}
+
+@media (max-width: 790px) {
+
+  #container { 
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 0.5rem;
+  }
 }

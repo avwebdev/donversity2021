@@ -4,8 +4,9 @@ import { DataContext } from "../../misc/DataContext";
 import { ContentPage } from "../../types";
 import Navbar from "./../../components/Navbar/Navbar";
 import RenderView from "./RenderView";
+import styles from "./ViewPage.module.css";
 
-export default function ViewPage(props: any) {
+export default function ViewPage() {
   const data = useContext(DataContext);
   const pathname = useLocation().pathname;
 
@@ -22,7 +23,12 @@ export default function ViewPage(props: any) {
   return (
     <Fragment>
       <Navbar></Navbar>
-      {viewArr}
+      <div id={styles.container}>
+        <h3>{currentPage.title}</h3>
+        <h5>{currentPage.description}</h5>
+        <h6>{currentPage.author ? `By ${currentPage.author}` : ""}</h6>
+        {viewArr}
+      </div>
     </Fragment>
   );
 }

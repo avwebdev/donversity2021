@@ -14,12 +14,29 @@ monday:
     navTitle: Sample Page
     description: To celebrate our diversity of clubs on campus, they created messages for you all to see!
     link: "/view/sample"
+    author: AV Journalism
     content:
-      - type: VideoView
-        link: https://www.youtube.com/embed/ZLH1_C-UNHw
+
+      - type: MediaView
+        link: https://donversity.amadorweb.org/images/monday.jpeg
+        contentType: image
         title: testing 1234
         author: Subha Das
-        description: 1600 Sat BOI
+        description: What a cool video. A 3 part series to melt your brains with joy.
+
+      - type: MediaView
+        link: https://donversity.amadorweb.org/images/monday.jpeg
+        contentType: image
+        title: testing 1234
+        author: Subha Das
+        description: What a cool video. A 3 part series to melt your brains with joy.
+
+      - type: MediaView
+        link: https://donversity.amadorweb.org/images/monday.jpeg
+        contentType: image
+        title: testing 1234
+        author: Subha Das
+        description: What a cool video. A 3 part series to melt your brains with joy.
 
       - type: MarkdownView
         link: sample

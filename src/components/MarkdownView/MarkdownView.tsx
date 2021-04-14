@@ -1,6 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
+import styles from "./MarkdownView.module.css";
 
 interface MarkdownViewProps {
   file: string;
@@ -26,5 +27,9 @@ export default function MarkdownView({ file }: MarkdownViewProps) {
     };
   }, [file]);
 
-  return <ReactMarkdown plugins={[gfm]}>{raw}</ReactMarkdown>;
+  return (
+    <div id={styles.container}>
+      <ReactMarkdown plugins={[gfm]}>{raw}</ReactMarkdown>
+    </div>
+  )
 }

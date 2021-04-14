@@ -4,12 +4,14 @@ export interface ContentPage {
   link: string;
   description: string;
   content: Content[];
+  author?: string;
 }
 
 export interface Content {
-  type: "VideoView" | "LinksView" | "MarkdownView";
+  type: "MediaView" | "LinksView" | "MarkdownView";
   link: string;
   description?: string;
   title?: string;
   author?: string;
+  contentType?: "yt-video" | "image"
 }

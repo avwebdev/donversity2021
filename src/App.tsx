@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router";
 import ViewPage from "./pages/ViewPage/ViewPage";
 import { LoaderPage, Overlay } from "./pages/LoaderPage/LoaderPage";
 import About from "./pages/AboutPage/AboutPage";
-import VideoView from "./components/VideoView/VideoView";
+import MediaView from "./components/MediaView/MediaView";
 import LinksView from "./components/LinksView/LinksView";
 // import logo from './logo.svg';
 import { Fragment, useState } from "react";
@@ -57,11 +57,11 @@ function App() {
           <LoaderPage></LoaderPage>
         </Route>
         <Route path="/video-view">
-          <VideoView
+          <MediaView
             description="This video showcases Mr. Butterfield in all his glory."
             author="Keerthi Kalyaan"
             youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"
-          ></VideoView>
+          ></MediaView>
         </Route>
         <Route path="/link-view">
           <LinksView
