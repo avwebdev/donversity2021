@@ -8,9 +8,17 @@
     margin-bottom: 20px;
 }
 
+#sectionChooser {
+    background-color: none;
+    border: 2px solid purple;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: purple;
+}
+
 #highlights {
     display: grid;
-    grid-gap: 30px;
+    gap: 30px;
     grid-template-columns: 50% 50%;
 }
 
@@ -19,21 +27,47 @@
     width: 100%;
 }
 
-.highlight > img {
+.highlight > span > img {
     width: 100%;
     border-radius: 2px;
 }
 
-.highlight > h4 {
+.highlight > span > h4, .event > span > h4 {
     font-weight: 600;
     font-size: 1rem;
     margin-top: 15px;
     margin-bottom: 5px;
-
 }
 
-.highlight > p {
+.highlight > span > p, .event > span > p {
     font-weight: 500;
+}
+
+#events > .event:first-child {
+    margin-top: 0em;
+}
+
+.event {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    grid-template-columns: 200px auto;
+    display: grid;
+    gap: 15px;
+}
+
+.event > span > h4 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.event > img {
+    width: 200px;
+    height: 200px;
+}
+
+.event > span > p {
+    padding-top: 0px;
 }
 
 @media (max-width: 790px) {
@@ -51,5 +85,14 @@
     #container h3:first-child {
         margin-bottom: 20px;
         font-size: 1.5rem;
+    }
+
+    .event {
+        grid-template-columns: 100px auto;
+    }
+
+    .event > img {
+        width: 100px;
+        height: 100px;
     }
 }

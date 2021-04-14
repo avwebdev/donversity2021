@@ -142,6 +142,11 @@
         margin-bottom: 10px;
     }
 
+    .day {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
     .day h2 {
         border-bottom: 0px;
         display: flex;

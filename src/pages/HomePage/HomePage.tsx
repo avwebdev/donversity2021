@@ -2,7 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import Highlight from "./Highlight";
+import Event from "./Event";
 import styles from "./HomePage.module.css";
 
 export default function HomePage() {
@@ -16,24 +16,31 @@ export default function HomePage() {
                 </h3>
 
                 <div id={styles.highlights}>
-                    <Highlight></Highlight>
-                    <Highlight></Highlight>
+                    <Event highlight={true} ></Event>
+                    <Event highlight={true} ></Event>
                 </div>
 
                 <h3>
                     <div className="btn-group">
-                        <button type="button" className="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            Action
+                        <button type="button" className="btn dropdown-toggle btn-lg" data-bs-toggle="dropdown" aria-expanded="false" id={styles.sectionChooser}>
+                            Today's Events
                         </button>
                         <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                            <li><a className="dropdown-item" href="#">Monday</a></li>
+                            <li><a className="dropdown-item" href="#">Tuesday</a></li>
+                            <li><a className="dropdown-item" href="#">Wednesday</a></li>
                             <li><hr className="dropdown-divider"></hr></li>
-                            <li><a className="dropdown-item" href="#">Separated link</a></li>
+                            <li><a className="dropdown-item" href="#">Highlights</a></li>
                         </ul>
                     </div>
                 </h3>
+
+                <div id={styles.events}>
+                    <Event></Event>
+                    <Event></Event>
+                    <Event></Event>
+                    <Event></Event>
+                </div>
             </div>
         </Fragment>
     )
