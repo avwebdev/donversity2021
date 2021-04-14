@@ -10,6 +10,10 @@ export default function HomePage() {
         <Fragment>
             <Navbar></Navbar>
             <div id={styles.container}>
+                <div id={styles.dayBanner}>
+                    <h3>Monday</h3>
+                    <h2>Better Together through Art & Music</h2>
+                </div>
                 <h3>
                     Today's Highlights
                     <FontAwesomeIcon icon={["fas", "star"]} style={starStyle}></FontAwesomeIcon>

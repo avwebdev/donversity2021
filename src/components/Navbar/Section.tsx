@@ -1,7 +1,7 @@
 import styles from "./Activated.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
-import { Content, ContentPage } from "../../types";
+import { ContentPage } from "../../types";
 import { Link } from "react-router-dom";
 
 export default function Section({ sectionName, sectionContent }: { sectionContent: ContentPage[], sectionName: string}) {

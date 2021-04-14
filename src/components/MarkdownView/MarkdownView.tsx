@@ -20,7 +20,12 @@ export default function MarkdownView({ file }: MarkdownViewProps) {
       if (isMounted) setRaw(text);
     };
 
-    getFile();
+    try {
+      getFile();
+    }
+    catch (e) {
+      console.log(e);
+    }
 
     return () => {
       isMounted = false;

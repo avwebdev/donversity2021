@@ -6,7 +6,7 @@ import activeNavStyles from "./Activated.module.css";
 import "./Navbar.css";
 import Section from "./Section";
 import { DataContext } from "../../misc/DataContext";
-import { ContentPage, ContentSections } from "../../types";
+import { ContentSections } from "../../types";
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -39,10 +39,10 @@ export default function Navbar() {
 
       <div id={styles.expand} style={expandStyles}>
         <div id={styles.topRow}>
-          <a href="https://google.com"><Link to="/home">Home</Link></a>
-          <a href="https://google.com"><Link to="/about">About</Link></a>
-          <a href="https://google.com"><Link to="/club-fair">Club Fair</Link></a>
-          <a href="https://google.com"><Link to="https://google.com">Art Gallery</Link></a>
+          <Link to="/home">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/club-fair">Club Fair</Link>
+          <Link to="https://google.com">Art Gallery</Link>
         </div>
 
 
