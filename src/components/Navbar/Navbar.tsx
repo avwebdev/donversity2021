@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useState } from "react";
+import { CSSProperties, useState } from "react";
 import inactiveNavStyles from "./Unactivated.module.css";
 import activeNavStyles from "./Activated.module.css";
+import "./Navbar.css";
 import Section from "./Section";
 
 export default function Navbar() {
@@ -58,7 +59,7 @@ export default function Navbar() {
   );
 }
 
-function openStyles() {
+function openStyles() : CSSProperties {
   return {
     backgroundColor: "var(--navbar-background-color)",
     color: "white",
@@ -66,15 +67,24 @@ function openStyles() {
     width: "100vw",
     transition: "background 0.4s",
     overflowY: "scroll",
-    paddingBottom: "20px"
+    paddingBottom: "20px",
+    position: "fixed",
+    zIndex: 3,
+    top: "0"
 
   }
 }
 
-function closedStyles() {
+function closedStyles() : CSSProperties {
   return {
-    backgroundColor: "transparent",
-    height: "auto"
+    backgroundColor: "whitesmoke",
+    height: "auto",
+    position: "fixed",
+    zIndex: 3,
+    top: "0",
+    width: "100vw",
+    opacity: 0.8
+
   }
 }
 
