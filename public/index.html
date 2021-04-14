@@ -25,6 +25,19 @@
 
       .navbar-brand {
         margin: auto;
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        .navbar-brand {
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .navbar-brand {
+          font-size: 0.7rem;
+        }
       }
 
       @media (min-width: 768px) {
@@ -41,7 +54,7 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <p class="navbar-brand" style="text-align: center">
+          <p class="navbar-brand">
             Donversity 2021 Preview!<br />Come back on Monday, April 19 for the
             FULL experience!
           </p>
