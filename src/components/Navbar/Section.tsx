@@ -1,14 +1,19 @@
 import styles from "./Activated.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import { Content, ContentPage } from "../../types";
+import { Link } from "react-router-dom";
 
-export default function Section({ sectionName, info }: any) {
+export default function Section({ sectionName, sectionContent }: { sectionContent: ContentPage[], sectionName: string}) {
 
     const [mobileExpanded, setMobileExpanded] = useState(false);
     const toggleMobileExpanded = () => {
         setMobileExpanded(!mobileExpanded);
-        console.log("change");
     }
+
+    const contentPages = sectionContent?.map(content => (
+        <Link to={content.link}>{content.title}</Link>
+    ));
     return (
         <div className={`col-md-12 ${styles.day}`}>
             <h2>{sectionName}
@@ -17,9 +22,7 @@ export default function Section({ sectionName, info }: any) {
                 </i>
             </h2>
             <span style={getSpanDisplay(mobileExpanded)}>
-                <a href="https://google.com">Cooking with Butterfield!</a>
-                <a href="https://google.com">Latina club celebration</a>
-                <a href="https://google.com">A note from Green Team (world day 2020)</a>
+                {contentPages}
             </span>
         </div>
     )

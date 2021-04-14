@@ -15,3 +15,11 @@ export interface Content {
   author?: string;
   contentType?: "yt-video" | "image"
 }
+
+export interface ContentSections {
+  monday: ContentPage[];
+  tuesday: ContentPage[];
+  wednesday: ContentPage[];
+  thursday: ContentPage[];
+  friday: ContentPage[];
+}

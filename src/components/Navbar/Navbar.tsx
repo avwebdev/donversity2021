@@ -1,14 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { CSSProperties, useState } from "react";
+import { CSSProperties, useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import inactiveNavStyles from "./Unactivated.module.css";
 import activeNavStyles from "./Activated.module.css";
 import "./Navbar.css";
 import Section from "./Section";
+import { DataContext } from "../../misc/DataContext";
+import { ContentPage, ContentSections } from "../../types";
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarStyles = navbarOpen ? openStyles() : closedStyles();
   const expandStyles = navbarOpen ? expandDivStyles() : {};
+  const data = useContext(DataContext) as ContentSections;
+  console.log(data);
 
   const toggleNavbar = () => {
     setNavbarOpen(!navbarOpen);
@@ -34,22 +39,22 @@ export default function Navbar() {
 
       <div id={styles.expand} style={expandStyles}>
         <div id={styles.topRow}>
-          <a href="https://google.com">Home</a>
-          <a href="https://google.com">About</a>
-          <a href="https://google.com">Club Fair</a>
-          <a href="https://google.com">Art Gallery</a>
+          <a href="https://google.com"><Link to="/home">Home</Link></a>
+          <a href="https://google.com"><Link to="/about">About</Link></a>
+          <a href="https://google.com"><Link to="/club-fair">Club Fair</Link></a>
+          <a href="https://google.com"><Link to="https://google.com">Art Gallery</Link></a>
         </div>
 
 
         <div id={styles.dayContent} className="container">
           <div className={`${styles.row} row justify-content-center`}>
-            <Section sectionName="Monday"></Section>
-            <Section sectionName="Tuesday"></Section>
-            <Section sectionName="Wednesday"></Section>
+            <Section sectionName="Monday" sectionContent={data.monday}></Section>
+            <Section sectionName="Tuesday" sectionContent={data.tuesday}></Section>
+            <Section sectionName="Wednesday" sectionContent={data.wednesday}></Section>
           </div>
           <div className={`${styles.row} row justify-content-center`}>
-            <Section sectionName="Thursday"></Section>
-            <Section sectionName="Friday"></Section>
+            <Section sectionName="Thursday" sectionContent={data.thursday}></Section>
+            <Section sectionName="Friday" sectionContent={data.friday}></Section>
           </div>
         </div>
 
