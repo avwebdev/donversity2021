@@ -23,7 +23,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 35rem;
   background: rgb(120, 4, 136);
   background: linear-gradient(
     90deg,
@@ -42,7 +42,7 @@ body {
 
 .carousel-item > img {
   position: absolute;
-  top: 5%;
+  top: 10%;
   height: 18rem;
   text-align: center;
 }
