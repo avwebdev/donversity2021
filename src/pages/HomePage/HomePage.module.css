@@ -63,7 +63,7 @@
 
 .event {
   margin-bottom: 3rem;
-  grid-template-columns: 200px auto;
+  grid-template-columns: 150px auto;
   display: grid;
   gap: 15px;
 }
@@ -75,8 +75,8 @@
 }
 
 .event > img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
 }
 

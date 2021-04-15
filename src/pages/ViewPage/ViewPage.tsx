@@ -33,7 +33,7 @@ export default function ViewPage() {
 function getCurrentPage(pathname: string, sections: ContentSection[]) {
   let currentPage: ContentPage | undefined = undefined;
   for (const section of sections) {
-    if (section) {
+    if (section.sections) {
       for (const page of section.sections) {
         if (page.link === pathname) {
           currentPage = page;
