@@ -1,6 +1,6 @@
 import styles from "./MediaView.module.css";
 
-export default function MediaView({ description, url, type }: any) {
+export default function MediaView({ description, url, type, className }: any) {
   switch (type) {
     case "yt-video": {
       return (
@@ -15,6 +15,14 @@ export default function MediaView({ description, url, type }: any) {
           </div>
           <p>{description}</p>
         </section>
+      );
+    }
+
+    case "video": {
+      return (
+        <video controls autoPlay className={className}>
+          <source src={url} />
+        </video>
       );
     }
 

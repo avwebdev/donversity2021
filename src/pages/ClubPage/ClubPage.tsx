@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Redirect, useParams } from "react-router-dom";
+import MediaView from "../../components/MediaView/MediaView";
 import { DataContext } from "../../misc/DataContext";
 import { ContentSections } from "../../types";
 import styles from "./ClubPage.module.css";
@@ -19,6 +20,13 @@ export default function ClubPage() {
   return (
     <div className={styles.club}>
       <h1>{clubInfo.name}</h1>
+      {clubInfo.video && (
+        <MediaView
+          className={styles.clubVideo}
+          type="video"
+          url={`/clubs/${clubInfo.video}`}
+        />
+      )}
       {clubInfo.description.split("\n").map((fragment, i) => (
         <h6 key={i} className={styles.clubDescription}>
           {fragment}

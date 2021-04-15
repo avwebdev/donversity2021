@@ -9,3 +9,13 @@
   margin: 10px;
   text-align: center;
 }
+
+.clubVideo {
+  max-width: 50%;
+}
+
+@media (max-width: 500px) {
+  .clubVideo {
+    max-width: 75%;
+  }
+}
