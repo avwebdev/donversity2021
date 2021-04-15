@@ -3,13 +3,9 @@ import { Switch, Route } from "react-router";
 import ViewPage from "./pages/ViewPage/ViewPage";
 import { LoaderPage, Overlay } from "./pages/LoaderPage/LoaderPage";
 import About from "./pages/AboutPage/AboutPage";
-import MediaView from "./components/MediaView/MediaView";
-import LinksView from "./components/LinksView/LinksView";
-// import logo from './logo.svg';
 import { Fragment, useState } from "react";
 import { load } from "js-yaml";
 import { DataContext } from "./misc/DataContext";
-import MapChart from "./components/Map/Map";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import HomePage from "./pages/HomePage/HomePage";
@@ -55,24 +51,6 @@ function App() {
         </Route>
         <Route path="/load">
           <LoaderPage></LoaderPage>
-        </Route>
-        <Route path="/video-view">
-          <MediaView
-            description="This video showcases Mr. Butterfield in all his glory."
-            author="Keerthi Kalyaan"
-            youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"
-          ></MediaView>
-        </Route>
-        <Route path="/link-view">
-          <LinksView
-            title="Some Title"
-            description="This video showcases Mr. Butterfield in all his glory."
-            hook="Keerthi Kalyaan"
-            youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"
-          ></LinksView>
-        </Route>
-        <Route path="/map">
-          <MapChart></MapChart>
         </Route>
         <Route path="/">
           <HomePage></HomePage>
