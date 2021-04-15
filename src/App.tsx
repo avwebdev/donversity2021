@@ -11,6 +11,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import HomePage from "./pages/HomePage/HomePage";
 import Navbar from "./components/Navbar/Navbar";
 import ClubsPage from "./pages/ClubsPage/ClubsPage";
+import ClubPage from "./pages/ClubPage/ClubPage";
 
 library.add(fas);
 
@@ -51,6 +52,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/club-fair/:club">
+          <ClubPage />
         </Route>
         <Route path="/club-fair">
           <ClubsPage />

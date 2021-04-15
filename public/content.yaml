@@ -116,6 +116,7 @@ friday:
 
 clubs:
   - name: Key Club
+    id: key-club
     description:
       Key Club is a club all about providing service for our community, building
       character and developing leadership. This club provides so many varieties of volunteering
@@ -125,6 +126,7 @@ clubs:
     image: "key-club.jpg"
 
   - name: Anime/Manga Club
+    id: anime-manga-club
     description:
       Anime and Manga Club is a small chill and relaxing club where you can
       hang out with friends and people who have the same interests as you. We watch
@@ -132,6 +134,7 @@ clubs:
     image: "anime-club.png"
 
   - name: Black Student Union
+    id: black-student-union
     description: |-
       We as a black student Union strive to bring the black students on the Amador campus together. In the bsu we hope to create a safe space to share our experiences, bond through events like the black college expo, discussions, and our African culture. It’s a place to spend time together, talk about our history, current events, and anything on the students minds.
 
@@ -141,6 +144,7 @@ clubs:
     image: "black-student-union.jpg"
 
   - name: AV Latino Club
+    id: latino-club
     description:
       Our goal is to help welcome every ethnicity. We most importantly support
       each other and focus on new students in the US/PUSD by helping and supporting  them
@@ -149,6 +153,7 @@ clubs:
     image: "latino-club.jpg"
 
   - name: AV UI/UX Design Club
+    id: ui-ux-club
     description:
       AV UI/UX Design Club is an inclusive community that bridges the gap
       between technology and encourages students to engage in UI/UX Design. We build
@@ -160,6 +165,7 @@ clubs:
     image: "ui-ux-club.png"
 
   - name: Kids Against Hunger Club
+    id: kids-against-hunger
     description:
       We pack nutritious meals with the Kids Against Hunger non-profit organization
       to feed families locally and globally. Our goal is to cease starvation rates and
@@ -169,6 +175,7 @@ clubs:
     image: "kids-against-hunger.jpg"
 
   - name: AV Science Team
+    id: science-team
     description:
       "The AV Science Olympiad team prepares and competes in the annual Bay
       Area Regional Science Olympiad (BARSO) and Golden Gate Science Olympiad Invitationals
@@ -182,6 +189,7 @@ clubs:
     image: "science-team.jpg"
 
   - name: Neuroscience Club
+    id: neuroscience-club
     description: |-
       Our Neuroscience club connects students with peers who have a passion about understanding the complexities and intricate functions of the brain. The club is split into groups that research various neuroscience topics and share their discoveries with members about the relationship between our brain, our thoughts, and our behavior.
 
@@ -193,6 +201,7 @@ clubs:
     image: "neuroscience-club.jpeg"
 
   - name: Girls Who Start
+    id: girls-who-start
     description:
       AVHS Girls Who Start encourages the next generation of businesspeople
       by teaching valuable business skills through Zoom workshops, introducing trailblazers
@@ -204,6 +213,7 @@ clubs:
     image: "girls-who-start.png"
 
   - name: AV Space & Astronomy
+    id: space-and-astronomy
     description:
       We are a club open to anyone from experts to amateurs interested in
       astronomy! We cover all aspects of the vast field of astronomy from engineering,
@@ -215,6 +225,7 @@ clubs:
     image: "space-club.JPG"
 
   - name: Amador Valley Bollywood Ensemble
+    id: bollywood-ensemble
     description:
       Amador Valley Bollywood ensemble is a music based club at school. This
       club combine aspects of Indian and Western culture through music and stylistic

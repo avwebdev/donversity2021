@@ -20,8 +20,10 @@ export interface Content {
 
 export interface Club {
   name: string;
+  id: string;
   description: string;
   image: string;
+  video?: string;
 }
 
 export interface ContentSections {

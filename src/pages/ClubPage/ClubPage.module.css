@@ -1,0 +1,11 @@
+.club {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clubDescription {
+  margin: 10px;
+  text-align: center;
+}
