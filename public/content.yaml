@@ -173,6 +173,7 @@ clubs:
       community. If you have any questions, email us at avhskah@gmail.com or dm us on
       Instagram @avhskah, and join our Remind by texting @avkah2021 to 81010!
     image: "kids-against-hunger.jpg"
+    video: "kids-against-hunger.mp4"
 
   - name: AV Science Team
     id: science-team
@@ -199,6 +200,7 @@ clubs:
 
       Anyone with a curiosity about the brain and hoping to find ways to help yourself, your friends, your loved ones, or your community is welcome to join us!
     image: "neuroscience-club.jpeg"
+    video: "neuroscience-club.mp4"
 
   - name: Girls Who Start
     id: girls-who-start

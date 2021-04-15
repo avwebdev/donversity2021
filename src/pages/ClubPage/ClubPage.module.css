@@ -16,3 +16,13 @@
   margin-top: 10px;
   padding-top: 0px;
 }
+
+.clubVideo {
+  max-width: 50%;
+}
+
+@media (max-width: 500px) {
+  .clubVideo {
+    max-width: 75%;
+  }
+}
