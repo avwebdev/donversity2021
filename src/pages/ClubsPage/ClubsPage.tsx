@@ -16,15 +16,16 @@ function ClubDiv(club: Club) {
       >
         <div
           className={`${styles.overlay} ${hovering && styles.overlayShow}`}
-        ></div>
+        >
+          <h5 className={`${styles.clubName} ${hovering && styles.clubNameShow}`}>
+            {club.name}
+          </h5>
+        </div>
         <img
           src={`/clubs/${club.image}`}
           alt={club.name}
           className={styles.clubImage}
         />
-        <h5 className={`${styles.clubName} ${hovering && styles.clubNameShow}`}>
-          {club.name}
-        </h5>
       </div>
     </Link>
   );
@@ -35,7 +36,10 @@ export default function ClubsPage() {
 
   return (
     <>
-      <h1 className={styles.heading}>Club Fair!</h1>
+      <div id={styles.top}>
+        <h1 className={styles.heading}>Club Fair!</h1>
+        <h5 id={styles.description}>A huge source of Diversity on our campus comes from our clubs. From Dance Clubs such as Bollywood and bhangra, to tech clubs such as Amador UAV's, we have it all! Celebrate Donversity by checking out some of these clubs.</h5>
+      </div>
       <div className={styles.clubs}>
         {data.clubs.map((club, i) => (
           <ClubDiv key={i} {...club} />
