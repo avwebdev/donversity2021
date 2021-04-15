@@ -124,6 +124,10 @@
 
 @media (max-width: 790px) {
 
+  .menyAvPaa:checked ~ .burger > div:nth-child(1) {
+    transform: translateY(11.2px) rotate(45deg);
+  }
+
     #dayContent {
         max-width: 400px;
     }
