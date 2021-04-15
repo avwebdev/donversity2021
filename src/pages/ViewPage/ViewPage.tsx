@@ -2,7 +2,6 @@ import { Fragment, useContext } from "react";
 import { Redirect, useLocation } from "react-router-dom";
 import { DataContext } from "../../misc/DataContext";
 import { ContentPage, ContentSection } from "../../types";
-import Navbar from "./../../components/Navbar/Navbar";
 import RenderView from "./RenderView";
 import styles from "./ViewPage.module.css";
 
@@ -21,7 +20,6 @@ export default function ViewPage() {
 
   return (
     <Fragment>
-      <Navbar key={Math.random()}></Navbar>
       <div id={styles.container}>
         <h3>{currentPage.title}</h3>
         <h5>{currentPage.description}</h5>

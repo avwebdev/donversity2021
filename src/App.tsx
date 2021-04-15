@@ -9,6 +9,7 @@ import { DataContext } from "./misc/DataContext";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import HomePage from "./pages/HomePage/HomePage";
+import Navbar from "./components/Navbar/Navbar";
 
 library.add(fas);
 
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <DataContext.Provider value={data}>
+      <Navbar />
       <Switch>
         <Route path="/view/:view">
           <ViewPage></ViewPage>

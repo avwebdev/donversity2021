@@ -13,23 +13,32 @@ export default function Navbar() {
   const navbarStyles = navbarOpen ? openStyles() : closedStyles();
   const expandStyles = navbarOpen ? expandDivStyles() : {};
   const data = useContext(DataContext) as ContentSections;
-  console.log(data);
 
   const toggleNavbar = () => {
     setNavbarOpen(!navbarOpen);
-  }
+  };
 
   const styles = navbarOpen ? activeNavStyles : inactiveNavStyles;
 
   return (
     <div id={styles.container} style={navbarStyles}>
-
       <nav className="navbar navbar-expand-lg">
-        <a className={`${styles.brand} navbar-brand`} href="#">Donversity</a>
+        <a className={`${styles.brand} navbar-brand`} href="#">
+          Donversity
+        </a>
 
         <nav className="ml-auto">
-          <input type="checkbox" className={styles.menyAvPaa} id="menyAvPaa"></input>
-          <label id="burger" htmlFor="menyAvPaa" className={styles.burger} onClick={toggleNavbar}>
+          <input
+            type="checkbox"
+            className={styles.menyAvPaa}
+            id="menyAvPaa"
+          ></input>
+          <label
+            id="burger"
+            htmlFor="menyAvPaa"
+            className={styles.burger}
+            onClick={toggleNavbar}
+          >
             <div></div>
             <div></div>
             <div></div>
@@ -45,26 +54,38 @@ export default function Navbar() {
           <Link to="https://google.com">Art Gallery</Link>
         </div>
 
-
         <div id={styles.dayContent} className="container">
           <div className={`${styles.row} row justify-content-center`}>
-            <Section sectionName="Monday" sectionContent={data.monday.sections}></Section>
-            <Section sectionName="Tuesday" sectionContent={data.tuesday.sections}></Section>
-            <Section sectionName="Wednesday" sectionContent={data.wednesday.sections}></Section>
+            <Section
+              sectionName="Monday"
+              sectionContent={data.monday.sections}
+            ></Section>
+            <Section
+              sectionName="Tuesday"
+              sectionContent={data.tuesday.sections}
+            ></Section>
+            <Section
+              sectionName="Wednesday"
+              sectionContent={data.wednesday.sections}
+            ></Section>
           </div>
           <div className={`${styles.row} row justify-content-center`}>
-            <Section sectionName="Thursday" sectionContent={data.thursday.sections}></Section>
-            <Section sectionName="Friday" sectionContent={data.friday.sections}></Section>
+            <Section
+              sectionName="Thursday"
+              sectionContent={data.thursday.sections}
+            ></Section>
+            <Section
+              sectionName="Friday"
+              sectionContent={data.friday.sections}
+            ></Section>
           </div>
         </div>
-
       </div>
-
     </div>
   );
 }
 
-function openStyles() : CSSProperties {
+function openStyles(): CSSProperties {
   return {
     backgroundColor: "var(--navbar-background-color)",
     color: "white",
@@ -75,12 +96,11 @@ function openStyles() : CSSProperties {
     paddingBottom: "20px",
     position: "fixed",
     zIndex: 3,
-    top: "0"
-
-  }
+    top: "0",
+  };
 }
 
-function closedStyles() : CSSProperties {
+function closedStyles(): CSSProperties {
   return {
     backgroundColor: "whitesmoke",
     height: "auto",
@@ -88,9 +108,8 @@ function closedStyles() : CSSProperties {
     zIndex: 3,
     top: "0",
     width: "100vw",
-    opacity: 0.8
-
-  }
+    opacity: 0.8,
+  };
 }
 
 function expandDivStyles() {
@@ -98,5 +117,5 @@ function expandDivStyles() {
     display: "inline-block",
     width: "100vw",
     opacity: "1",
-  }
+  };
 }
