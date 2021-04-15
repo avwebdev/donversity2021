@@ -143,7 +143,7 @@ export default function HomePage() {
 
                 <div id={styles.events}>{otherElements}</div>
 
-                <button id={styles.expandEvents} type="button" className="btn btn-info" onClick={toggleSetExpanded}>See {allEventsExpanded ? "less" : "all"} events</button>
+                <button id={styles.expandEvents} type="button" className="btn" onClick={toggleSetExpanded}>See {allEventsExpanded ? "less" : "all"} events</button>
             </div>
         </Fragment>
     );
