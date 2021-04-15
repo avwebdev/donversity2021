@@ -32,6 +32,7 @@ export default function Navbar() {
             type="checkbox"
             className={styles.menyAvPaa}
             id="menyAvPaa"
+            checked={navbarOpen}
           ></input>
           <label
             id="burger"
@@ -48,10 +49,18 @@ export default function Navbar() {
 
       <div id={styles.expand} style={expandStyles}>
         <div id={styles.topRow}>
-          <Link to="/home">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/club-fair">Club Fair</Link>
-          <Link to="https://google.com">Art Gallery</Link>
+          <Link to="/home" onClick={toggleNavbar}>
+            Home
+          </Link>
+          <Link to="/about" onClick={toggleNavbar}>
+            About
+          </Link>
+          <Link to="/club-fair" onClick={toggleNavbar}>
+            Club Fair
+          </Link>
+          <Link to="https://google.com" onClick={toggleNavbar}>
+            Art Gallery
+          </Link>
         </div>
 
         <div id={styles.dayContent} className="container">
@@ -59,24 +68,29 @@ export default function Navbar() {
             <Section
               sectionName="Monday"
               sectionContent={data.monday.sections}
+              onClick={toggleNavbar}
             ></Section>
             <Section
               sectionName="Tuesday"
               sectionContent={data.tuesday.sections}
+              onClick={toggleNavbar}
             ></Section>
             <Section
               sectionName="Wednesday"
               sectionContent={data.wednesday.sections}
+              onClick={toggleNavbar}
             ></Section>
           </div>
           <div className={`${styles.row} row justify-content-center`}>
             <Section
               sectionName="Thursday"
               sectionContent={data.thursday.sections}
+              onClick={toggleNavbar}
             ></Section>
             <Section
               sectionName="Friday"
               sectionContent={data.friday.sections}
+              onClick={toggleNavbar}
             ></Section>
           </div>
         </div>

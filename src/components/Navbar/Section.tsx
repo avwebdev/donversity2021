@@ -7,9 +7,11 @@ import { Link } from "react-router-dom";
 export default function Section({
   sectionName,
   sectionContent,
+  onClick,
 }: {
   sectionContent: ContentPage[];
   sectionName: string;
+  onClick: () => void;
 }) {
   const [mobileExpanded, setMobileExpanded] = useState(false);
   const toggleMobileExpanded = () => {
@@ -20,7 +22,11 @@ export default function Section({
     if (content.link?.includes("http")) {
       return <a href={content.link}>{content.title}</a>;
     }
-    return <Link to={content.link}>{content.title}</Link>;
+    return (
+      <Link to={content.link} onClick={onClick}>
+        {content.title}
+      </Link>
+    );
   });
   return (
     <div className={`col-md-12 ${styles.day}`}>
