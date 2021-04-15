@@ -73,7 +73,7 @@ export default function HomePage() {
 
     if (otherSections.length > 0) {
         otherElements.push(
-            <h5>From {currentDay.dayName}</h5>
+            <h5>From Today</h5>
         );
 
         otherElements = otherElements.concat(otherSections.map((page) => (
