@@ -14,6 +14,7 @@ function ClubDiv(club: Club) {
         onMouseOver={() => setHovering(true)}
         onMouseLeave={() => setHovering(false)}
       >
+        <p className={styles.mobileClubName}>{club.name}</p>
         <div
           className={`${styles.overlay} ${hovering && styles.overlayShow}`}
         >
