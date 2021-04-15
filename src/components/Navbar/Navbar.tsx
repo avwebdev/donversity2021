@@ -23,9 +23,9 @@ export default function Navbar() {
   return (
     <div id={styles.container} style={navbarStyles}>
       <nav className="navbar navbar-expand-lg">
-        <a className={`${styles.brand} navbar-brand`} href="#">
+        <Link className={`${styles.brand} navbar-brand`} to="/home">
           Donversity
-        </a>
+        </Link>
 
         <nav className="ml-auto">
           <input
