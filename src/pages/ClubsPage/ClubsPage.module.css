@@ -87,7 +87,28 @@
   object-fit: cover;
 }
 
+.mobileClubName {
+  display: none;
+}
+
 @media (max-width: 800px) {
+  .mobileClubName {
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    background-color: #1d1c1c;
+    opacity: 0.8;
+    color: white;
+  }
+
+  .overlay {
+    display: none;
+  }
+
   .heading {
     width: 100%;
     margin: auto;
