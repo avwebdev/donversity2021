@@ -10,6 +10,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import HomePage from "./pages/HomePage/HomePage";
 import Navbar from "./components/Navbar/Navbar";
+import ClubsPage from "./pages/ClubsPage/ClubsPage";
 
 library.add(fas);
 
@@ -46,16 +47,19 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/view/:view">
-          <ViewPage></ViewPage>
+          <ViewPage />
         </Route>
         <Route path="/about">
-          <About></About>
+          <About />
+        </Route>
+        <Route path="/club-fair">
+          <ClubsPage />
         </Route>
         <Route path="/load">
-          <LoaderPage></LoaderPage>
+          <LoaderPage />
         </Route>
         <Route path="/">
-          <HomePage></HomePage>
+          <HomePage />
         </Route>
       </Switch>
     </DataContext.Provider>

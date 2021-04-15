@@ -33,13 +33,9 @@ export default function Navbar() {
             className={styles.menyAvPaa}
             id="menyAvPaa"
             checked={navbarOpen}
+            onChange={toggleNavbar}
           ></input>
-          <label
-            id="burger"
-            htmlFor="menyAvPaa"
-            className={styles.burger}
-            onClick={toggleNavbar}
-          >
+          <label id="burger" htmlFor="menyAvPaa" className={styles.burger}>
             <div></div>
             <div></div>
             <div></div>

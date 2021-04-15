@@ -18,16 +18,21 @@ export default function Section({
     setMobileExpanded(!mobileExpanded);
   };
 
-  const contentPages = sectionContent?.map((content) => {
+  const contentPages = sectionContent?.map((content, i) => {
     if (content.link?.includes("http")) {
-      return <a href={content.link}>{content.title}</a>;
+      return (
+        <a key={i} href={content.link}>
+          {content.title}
+        </a>
+      );
     }
     return (
-      <Link to={content.link} onClick={onClick}>
+      <Link key={i} to={content.link} onClick={onClick}>
         {content.title}
       </Link>
     );
   });
+
   return (
     <div className={`col-md-12 ${styles.day}`}>
       <h2>
