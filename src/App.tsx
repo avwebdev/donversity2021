@@ -12,6 +12,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import Navbar from "./components/Navbar/Navbar";
 import ClubsPage from "./pages/ClubsPage/ClubsPage";
 import ClubPage from "./pages/ClubPage/ClubPage";
+import Footer from "./components/Footer/Footer";
 
 library.add(fas);
 
@@ -66,6 +67,7 @@ function App() {
           <HomePage />
         </Route>
       </Switch>
+      <Footer />
     </DataContext.Provider>
   );
 }

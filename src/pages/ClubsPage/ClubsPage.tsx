@@ -14,12 +14,12 @@ function ClubDiv(club: Club) {
         onMouseOver={() => setHovering(true)}
         onMouseLeave={() => setHovering(false)}
       >
-        <div
-          className={`${styles.overlay} ${hovering && styles.overlayShow}`}
-        >
-          <h5 className={`${styles.clubName} ${hovering && styles.clubNameShow}`}>
+        <div className={`${styles.overlay} ${hovering && styles.overlayShow}`}>
+          <h4
+            className={`${styles.clubName} ${hovering && styles.clubNameShow}`}
+          >
             {club.name}
-          </h5>
+          </h4>
         </div>
         <img
           src={`/clubs/${club.image}`}
@@ -38,7 +38,12 @@ export default function ClubsPage() {
     <>
       <div id={styles.top}>
         <h1 className={styles.heading}>Club Fair!</h1>
-        <h5 id={styles.description}>A huge source of Diversity on our campus comes from our clubs. From Dance Clubs such as Bollywood and bhangra, to tech clubs such as Amador UAV's, we have it all! Celebrate Donversity by checking out some of these clubs.</h5>
+        <h5 id={styles.description}>
+          A huge source of diversity on our campus comes from our clubs. From
+          dance clubs such as Bollywood and Bhangra, to tech clubs such as
+          Amador UAVs, we have it all! Celebrate Donversity by checking out some
+          of these clubs.
+        </h5>
       </div>
       <div className={styles.clubs}>
         {data.clubs.map((club, i) => (
