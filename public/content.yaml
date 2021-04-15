@@ -57,16 +57,19 @@ tuesday:
     - title: "UnDONe: What it means and how it matters"
       description: We are never done, there is always more to achieve...as a Don!
       link: "/view/undone"
+      imageUrl: https://donversity.amadorweb.org/images/monday.jpeg
       content:
 
     - title: A video from a teacher.
       description: A teacher's perspective from 2021
       link: "/view/teacher-vid"
+      imageUrl: https://donversity.amadorweb.org/images/monday.jpeg
       content:
 
     - title: What does Amador mean to you?
       description: Get real with this awesome Padlet!
       link: "/view/what-does-amador-mean-to-you"
+      imageUrl: https://donversity.amadorweb.org/images/monday.jpeg
       content:
 
 wednesday:
