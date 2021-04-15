@@ -6,7 +6,7 @@ export interface ContentPage {
   content: Content[];
   author?: string;
   highlight?: true;
-  imageUrl: string
+  imageUrl: string;
 }
 
 export interface Content {
@@ -15,7 +15,13 @@ export interface Content {
   description?: string;
   title?: string;
   author?: string;
-  contentType?: "yt-video" | "image"
+  contentType?: "yt-video" | "image";
+}
+
+export interface Club {
+  name: string;
+  description: string;
+  image: string;
 }
 
 export interface ContentSections {
@@ -24,6 +30,7 @@ export interface ContentSections {
   wednesday: ContentSection;
   thursday: ContentSection;
   friday: ContentSection;
+  clubs: Club[];
 }
 
 export interface ContentSection {
