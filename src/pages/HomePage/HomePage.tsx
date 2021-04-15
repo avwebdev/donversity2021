@@ -1,18 +1,74 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Event from "./Event";
 import styles from "./HomePage.module.css";
+import { DataContext } from "../../misc/DataContext";
+import { ContentPage, ContentSection, ContentSections } from "../../types";
 
 export default function HomePage() {
+    const data = useContext(DataContext) as ContentSections;
+    const today = new Date();
+    let currentSection: ContentSection;
+
+    if (today.getFullYear() === 2021 && today.getMonth() === 3) {
+        switch (today.getDate()) {
+            case 19:
+                currentSection = data.monday
+                break;
+
+            case 20:
+                currentSection = data.tuesday
+                break;
+
+            case 21:
+                currentSection = data.wednesday;
+                break;
+
+            case 22:
+                currentSection = data.thursday
+                break;
+
+            case 23:
+                currentSection = data.friday;
+                break;
+
+            default:
+                currentSection = data.monday;
+        }
+    }
+
+    else
+        currentSection = data.monday;
+
+
+    let highlights: ContentPage[] = [];
+    const otherSections = [...currentSection.sections]
+    for (let i = 0; i < otherSections.length; i++) {
+        const page = otherSections[i];
+        if (page.highlight===true) {
+            highlights = highlights.concat(otherSections.splice(i, 1));
+            i--;
+        }
+    }
+
+    const highlightElements = highlights.map(highlight => (
+        <Event highlight={true} page={highlight} key={highlight.link}></Event>
+    ));
+
+    const otherElements = otherSections.map(page => (
+        <Event highlight={false} page={page} key={page.link}></Event>
+    ));
+
+
     return (
         <Fragment>
             <Navbar></Navbar>
             <div id={styles.container}>
                 <div id={styles.dayBanner}>
-                    <h3>Monday</h3>
-                    <h2>Better Together through Art & Music</h2>
+                    <h3>{currentSection.dayName}</h3>
+                    <h2>{currentSection.motto}</h2>
                 </div>
                 <h3>
                     Today's Highlights
@@ -20,30 +76,16 @@ export default function HomePage() {
                 </h3>
 
                 <div id={styles.highlights}>
-                    <Event highlight={true} ></Event>
-                    <Event highlight={true} ></Event>
+                    {highlightElements}
                 </div>
 
                 <h3>
-                    <div className="btn-group">
-                        <button type="button" className="btn dropdown-toggle btn-lg" data-bs-toggle="dropdown" aria-expanded="false" id={styles.sectionChooser}>
-                            Today's Events
-                        </button>
-                        <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Monday</a></li>
-                            <li><a className="dropdown-item" href="#">Tuesday</a></li>
-                            <li><a className="dropdown-item" href="#">Wednesday</a></li>
-                            <li><hr className="dropdown-divider"></hr></li>
-                            <li><a className="dropdown-item" href="#">Highlights</a></li>
-                        </ul>
-                    </div>
+                    More Events
+                    <FontAwesomeIcon icon={["fas", "list-ul"]} style={bulletsIconStyle}></FontAwesomeIcon>
                 </h3>
 
                 <div id={styles.events}>
-                    <Event></Event>
-                    <Event></Event>
-                    <Event></Event>
-                    <Event></Event>
+                    {otherElements}
                 </div>
             </div>
         </Fragment>
@@ -52,5 +94,10 @@ export default function HomePage() {
 
 const starStyle = {
     color: "gold",
+    marginLeft: "10px"
+}
+
+const bulletsIconStyle = {
+    color: "purple",
     marginLeft: "10px"
 }

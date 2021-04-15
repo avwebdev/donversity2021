@@ -5,6 +5,8 @@ export interface ContentPage {
   description: string;
   content: Content[];
   author?: string;
+  highlight?: true;
+  imageUrl: string
 }
 
 export interface Content {
@@ -17,9 +19,15 @@ export interface Content {
 }
 
 export interface ContentSections {
-  monday: ContentPage[];
-  tuesday: ContentPage[];
-  wednesday: ContentPage[];
-  thursday: ContentPage[];
-  friday: ContentPage[];
+  monday: ContentSection;
+  tuesday: ContentSection;
+  wednesday: ContentSection;
+  thursday: ContentSection;
+  friday: ContentSection;
+}
+
+export interface ContentSection {
+  motto?: string;
+  dayName?: string;
+  sections: ContentPage[];
 }

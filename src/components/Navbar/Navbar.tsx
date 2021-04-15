@@ -48,13 +48,13 @@ export default function Navbar() {
 
         <div id={styles.dayContent} className="container">
           <div className={`${styles.row} row justify-content-center`}>
-            <Section sectionName="Monday" sectionContent={data.monday}></Section>
-            <Section sectionName="Tuesday" sectionContent={data.tuesday}></Section>
-            <Section sectionName="Wednesday" sectionContent={data.wednesday}></Section>
+            <Section sectionName="Monday" sectionContent={data.monday.sections}></Section>
+            <Section sectionName="Tuesday" sectionContent={data.tuesday.sections}></Section>
+            <Section sectionName="Wednesday" sectionContent={data.wednesday.sections}></Section>
           </div>
           <div className={`${styles.row} row justify-content-center`}>
-            <Section sectionName="Thursday" sectionContent={data.thursday}></Section>
-            <Section sectionName="Friday" sectionContent={data.friday}></Section>
+            <Section sectionName="Thursday" sectionContent={data.thursday.sections}></Section>
+            <Section sectionName="Friday" sectionContent={data.friday.sections}></Section>
           </div>
         </div>
 

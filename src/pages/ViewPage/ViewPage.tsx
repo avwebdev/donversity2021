@@ -1,7 +1,7 @@
 import { Fragment, useContext } from "react";
 import { Redirect, useLocation } from "react-router-dom";
 import { DataContext } from "../../misc/DataContext";
-import { ContentPage } from "../../types";
+import { ContentPage, ContentSection } from "../../types";
 import Navbar from "./../../components/Navbar/Navbar";
 import RenderView from "./RenderView";
 import styles from "./ViewPage.module.css";
@@ -10,7 +10,7 @@ export default function ViewPage() {
   const data = useContext(DataContext);
   const pathname = useLocation().pathname;
 
-  const sections = Object.values(data) as ContentPage[][];
+  const sections = Object.values(data) as ContentSection[];
   const currentPage = getCurrentPage(pathname, sections);
 
   if (!currentPage) {
@@ -18,7 +18,6 @@ export default function ViewPage() {
   }
 
   const viewArr = RenderView(currentPage?.content);
-  console.log(viewArr);
 
   return (
     <Fragment>
@@ -33,11 +32,11 @@ export default function ViewPage() {
   );
 }
 
-function getCurrentPage(pathname: string, sections: ContentPage[][]) {
+function getCurrentPage(pathname: string, sections: ContentSection[]) {
   let currentPage: ContentPage | undefined = undefined;
   for (const section of sections) {
     if (section) {
-      for (const page of section) {
+      for (const page of section.sections) {
         if (page.link === pathname) {
           currentPage = page;
           break;

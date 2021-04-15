@@ -1,98 +1,112 @@
 monday:
-  - title: Our favorite songs of 2021
-    link: /view/favorite-songs
-    description: Some amazing songs for you to jam to!
-    content:
+  motto: Better Together through Art & Music
+  dayName: Monday
+  sections:
+    - title: Our favorite songs of 2021
+      link: /view/favorite-songs
+      description: Some amazing songs for you to jam to!
+      highlight: true
+      imageUrl: https://www.hiboox.com/wp-content/uploads/2020/01/edm.jpg
+      content:
 
-  - title: Let's make an Amador Playlist!
-    navTitle: Amador Playlist
-    description: What are y'all feeling? Some hip-hop? Rap? Jazz?
-    link: /view/playlist
-    content:
+    - title: Let's make an Amador Playlist!
+      navTitle: Amador Playlist
+      description: What are y'all feeling? Some hip-hop? Rap? Jazz?
+      link: /view/playlist
+      imageUrl: https://media.idownloadblog.com/wp-content/uploads/2019/03/Share-Spotify-Playlist-with-iPhone-app.jpg
+      content:
+        - type: MediaView
+          link: https://donversity.amadorweb.org/images/monday.jpeg
+          contentType: image
+          title: testing 1234
+          author: Subha Das
+          description: What a cool video. A 3 part series to melt your brains with joy.
 
-      - type: MediaView
-        link: https://donversity.amadorweb.org/images/monday.jpeg
-        contentType: image
-        title: testing 1234
-        author: Subha Das
-        description: What a cool video. A 3 part series to melt your brains with joy.
+        - type: MediaView
+          link: https://donversity.amadorweb.org/images/monday.jpeg
+          contentType: image
+          title: testing 1234
+          author: Subha Das
+          description: What a cool video. A 3 part series to melt your brains with joy.
 
-      - type: MediaView
-        link: https://donversity.amadorweb.org/images/monday.jpeg
-        contentType: image
-        title: testing 1234
-        author: Subha Das
-        description: What a cool video. A 3 part series to melt your brains with joy.
+        - type: MediaView
+          link: https://donversity.amadorweb.org/images/monday.jpeg
+          contentType: image
+          title: testing 1234
+          author: Subha Das
+          description: What a cool video. A 3 part series to melt your brains with joy.
 
-      - type: MediaView
-        link: https://donversity.amadorweb.org/images/monday.jpeg
-        contentType: image
-        title: testing 1234
-        author: Subha Das
-        description: What a cool video. A 3 part series to melt your brains with joy.
+        - type: MarkdownView
+          link: sample
 
-      - type: MarkdownView
-        link: sample
+        - type: LinksView
+          link: https://google.com
+          title: Link to google
 
-      - type: LinksView
-        link: https://google.com
-        title: Link to google
-
-  - title: This art is jaw-dropping...
-    description: Check out beautiful, creative artwork from Amador's finest!
-    link: "http://art.com"
-    content: 
-
+    - title: This art is jaw-dropping...
+      description: Check out beautiful, creative artwork from Amador's finest!
+      imageUrl: https://th.bing.com/th/id/OIP.IN3TrjlkwpTh2KxksDugDwHaKU?w=192&h=268&c=7&o=5&dpr=2&pid=1.7
+      highlight: true
+      link: "http://art.com"
+      content:
 
 tuesday:
+  motto: Better Together but still UnDONe
+  dayName: Tuesday
+  sections:
+    - title: "UnDONe: What it means and how it matters"
+      description: We are never done, there is always more to achieve...as a Don!
+      link: "/view/undone"
+      content:
 
-  - title: "UnDONe: What it means and how it matters"
-    description: We are never done, there is always more to achieve...as a Don!
-    link: "/view/undone"
-    content: 
+    - title: A video from a teacher.
+      description: A teacher's perspective from 2021
+      link: "/view/teacher-vid"
+      content:
 
-  - title: A video from a teacher.
-    description: A teacher's perspective from 2021
-    link: "/view/teacher-vid"
-    content: 
-
-  - title: What does Amador mean to you?
-    description: Get real with this awesome Padlet!
-    link: "/view/what-does-amador-mean-to-you"
-    content: 
+    - title: What does Amador mean to you?
+      description: Get real with this awesome Padlet!
+      link: "/view/what-does-amador-mean-to-you"
+      content:
 
 wednesday:
+  motto: Better Together through our Interests
+  dayName: Wednesday
+  sections:
+    - title: Cooking with Butter!
+      description: A 3 Part series showcasing the culinary skills of Mr. Butterfield!
+      link: "/view/cooking-with-butter"
+      content:
 
-  - title: Cooking with Butter!
-    description: A 3 Part series showcasing the culinary skills of Mr. Butterfield!
-    link: "/view/cooking-with-butter"
-    content: 
-
-  - title: Virtual Map - Where are you from?
-    description: See the Donversity of people at our school!
-    link: "/view/virtual-map"
-    content: 
+    - title: Virtual Map - Where are you from?
+      description: See the Donversity of people at our school!
+      link: "/view/virtual-map"
+      content:
 
 thursday:
+  motto: Better Together through Culture & our Planet
+  dayName: Thursday
+  sections:
+    - title: Cooking with Butter!
+      description: A 3 Part series showcasing the culinary skills of Mr. Butterfield!
+      link: "/view/cooking-with-butter"
+      content:
 
-  - title: Cooking with Butter!
-    description: A 3 Part series showcasing the culinary skills of Mr. Butterfield!
-    link: "/view/cooking-with-butter"
-    content: 
-
-  - title: Virtual Map - Where are you from?
-    description: See the Donversity of people at our school!
-    link: "/view/virtual-map"
-    content: 
+    - title: Virtual Map - Where are you from?
+      description: See the Donversity of people at our school!
+      link: "/view/virtual-map"
+      content:
 
 friday:
+  motto: Better Together as Dons
+  dayName: Friday
+  sections:
+    - title: Here's the Rally Video
+      description: Dance, music, art, UAVs, its got it all. Check out the video!
+      link: "/view/rally-video"
+      content:
 
-  - title: Here's the Rally Video
-    description: Dance, music, art, UAVs, its got it all. Check out the video!
-    link: "/view/rally-video"
-    content: 
-
-  - title: Don Deckout!
-    description: How do you proudly represent AVHS? Find out!
-    link: "/view/deckout"
-    content: 
+    - title: Don Deckout!
+      description: How do you proudly represent AVHS? Find out!
+      link: "/view/deckout"
+      content:
