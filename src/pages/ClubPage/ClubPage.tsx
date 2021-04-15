@@ -20,9 +20,9 @@ export default function ClubPage() {
     <div className={styles.club}>
       <h1>{clubInfo.name}</h1>
       {clubInfo.description.split("\n").map((fragment, i) => (
-        <h6 key={i} className={styles.clubDescription}>
+        <p key={i} className={styles.clubDescription}>
           {fragment}
-        </h6>
+        </p>
       ))}
     </div>
   );

@@ -16,15 +16,16 @@ function ClubDiv(club: Club) {
       >
         <div
           className={`${styles.overlay} ${hovering && styles.overlayShow}`}
-        ></div>
+        >
+          <h5 className={`${styles.clubName} ${hovering && styles.clubNameShow}`}>
+            {club.name}
+          </h5>
+        </div>
         <img
           src={`/clubs/${club.image}`}
           alt={club.name}
           className={styles.clubImage}
         />
-        <h5 className={`${styles.clubName} ${hovering && styles.clubNameShow}`}>
-          {club.name}
-        </h5>
       </div>
     </Link>
   );
