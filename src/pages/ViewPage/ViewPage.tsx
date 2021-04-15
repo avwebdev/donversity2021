@@ -22,7 +22,7 @@ export default function ViewPage() {
 
   return (
     <Fragment>
-      <Navbar></Navbar>
+      <Navbar key={Math.random()}></Navbar>
       <div id={styles.container}>
         <h3>{currentPage.title}</h3>
         <h5>{currentPage.description}</h5>

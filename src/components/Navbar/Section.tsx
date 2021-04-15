@@ -4,16 +4,23 @@ import { useState } from "react";
 import { ContentPage } from "../../types";
 import { Link } from "react-router-dom";
 
-export default function Section({ sectionName, sectionContent }: { sectionContent: ContentPage[], sectionName: string}) {
+export default function Section({ sectionName, sectionContent }: { sectionContent: ContentPage[], sectionName: string }) {
 
     const [mobileExpanded, setMobileExpanded] = useState(false);
     const toggleMobileExpanded = () => {
         setMobileExpanded(!mobileExpanded);
     }
 
-    const contentPages = sectionContent?.map(content => (
-        <Link to={content.link}>{content.title}</Link>
-    ));
+    const contentPages = sectionContent?.map(content => {
+        if (content.link?.includes("http")) {
+            return (
+                <a href={content.link}>{content.title}</a>
+            )
+        }
+        return (
+            <Link to={content.link}>{content.title}</Link>
+        )
+    });
     return (
         <div className={`col-md-12 ${styles.day}`}>
             <h2>{sectionName}

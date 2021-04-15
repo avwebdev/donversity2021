@@ -1,21 +1,13 @@
 monday:
-  - title: Its time for the annual club fair!
-    navTitle: Club Fair
-    link: /view/club-fair
-    description: To celebrate our diversity of clubs on campus, they created messages for you all to see!
+  - title: Our favorite songs of 2021
+    link: /view/favorite-songs
+    description: Some amazing songs for you to jam to!
     content:
-      - type: MediaView
-        link: https://www.youtube.com/embed/P_OFVjakLlU
-        title: testing 1234
-        author: Subha Das
-        description: Marcus Smart hit a big free throw...or did he?
-        contentType: yt-video
 
-  - title: Sample Page
-    navTitle: Sample Page
-    description: To celebrate our diversity of clubs on campus, they created messages for you all to see!
-    link: "/view/sample"
-    author: AV Journalism
+  - title: Let's make an Amador Playlist!
+    navTitle: Amador Playlist
+    description: What are y'all feeling? Some hip-hop? Rap? Jazz?
+    link: /view/playlist
     content:
 
       - type: MediaView
@@ -45,7 +37,62 @@ monday:
       - type: LinksView
         link: https://google.com
         title: Link to google
+
+  - title: This art is jaw-dropping...
+    description: Check out beautiful, creative artwork from Amador's finest!
+    link: "http://art.com"
+    content: 
+
+
 tuesday:
+
+  - title: "UnDONe: What it means and how it matters"
+    description: We are never done, there is always more to achieve...as a Don!
+    link: "/view/undone"
+    content: 
+
+  - title: A video from a teacher.
+    description: A teacher's perspective from 2021
+    link: "/view/teacher-vid"
+    content: 
+
+  - title: What does Amador mean to you?
+    description: Get real with this awesome Padlet!
+    link: "/view/what-does-amador-mean-to-you"
+    content: 
+
 wednesday:
+
+  - title: Cooking with Butter!
+    description: A 3 Part series showcasing the culinary skills of Mr. Butterfield!
+    link: "/view/cooking-with-butter"
+    content: 
+
+  - title: Virtual Map - Where are you from?
+    description: See the Donversity of people at our school!
+    link: "/view/virtual-map"
+    content: 
+
 thursday:
+
+  - title: Cooking with Butter!
+    description: A 3 Part series showcasing the culinary skills of Mr. Butterfield!
+    link: "/view/cooking-with-butter"
+    content: 
+
+  - title: Virtual Map - Where are you from?
+    description: See the Donversity of people at our school!
+    link: "/view/virtual-map"
+    content: 
+
 friday:
+
+  - title: Here's the Rally Video
+    description: Dance, music, art, UAVs, its got it all. Check out the video!
+    link: "/view/rally-video"
+    content: 
+
+  - title: Don Deckout!
+    description: How do you proudly represent AVHS? Find out!
+    link: "/view/deckout"
+    content: 
