@@ -20,6 +20,9 @@ function ClubDiv(club: Club) {
         alt={club.name}
         className={styles.clubImage}
       />
+      <h5 className={`${styles.clubName} ${hovering && styles.clubNameShow}`}>
+        {club.name}
+      </h5>
     </div>
   );
 }
