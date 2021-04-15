@@ -73,12 +73,12 @@
 }
 
 #container a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .brand {
   font-size: 1.6rem;
-  margin-left: 1rem;
+  position: absolute;
 }
 
 #dayContent {
@@ -100,7 +100,7 @@
 }
 
 .day i {
-    display: none;
+  display: none;
 }
 
 .day > span > a {
@@ -111,66 +111,64 @@
 }
 
 .row {
-    margin-bottom: 5%;
-    margin-top: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 @media (max-width: 1000px) {
-    #dayContent {
-        max-width: 100%;
-    }
-    
+  #dayContent {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 790px) {
+  #dayContent {
+    max-width: 400px;
+  }
 
-    #dayContent {
-        max-width: 400px;
-    }
+  #topRow {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+    padding-left: 1em;
+    margin-top: 2em;
+  }
 
-    #topRow {
-        max-width: 400px;
-        margin: auto;
-        text-align: left;
-        padding-left: 1em;
-        margin-top: 2em;
-    }
+  #topRow a {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
 
-    #topRow a {
-        width: 100%;
-        display: block;
-        margin-bottom: 10px;
-    }
+  .day {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 
-    .day {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
+  .day h2 {
+    border-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
 
-    .day h2 {
-        border-bottom: 0px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
+  .day i {
+    display: block;
+  }
 
-    .day i {
-        display: block;
-    }
+  .day > span {
+    margin-bottom: 30px;
+  }
 
-    .day > span {
-        margin-bottom: 30px;
-    }
-
-    .row {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
+  .row {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 @media (min-width: 790px) {
-    .day{
-        min-width: 10rem;
-        max-width: 16rem;
-    }
+  .day {
+    min-width: 10rem;
+    max-width: 16rem;
+  }
 }

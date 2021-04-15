@@ -22,7 +22,10 @@ export default function Navbar() {
 
   return (
     <div id={styles.container} style={navbarStyles}>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg position-relative d-flex justify-content-center align-items-center">
+        <a href="https://amador.pleasantonusd.net/">
+          <img className="amador-logo" src="/logo.png" alt="Logo" />
+        </a>
         <Link className={`${styles.brand} navbar-brand`} to="/home">
           Donversity
         </Link>

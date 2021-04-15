@@ -61,5 +61,5 @@
 
 .brand {
   font-size: 1.6rem;
-  margin-left: 1rem;
+  position: absolute;
 }
