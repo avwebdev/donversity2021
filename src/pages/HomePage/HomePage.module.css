@@ -64,6 +64,7 @@
 }
 
 .event > span > p, .highlight > span > p {
+  font-size: 1.15rem;
   font-weight: 400;
 }
 
