@@ -18,42 +18,45 @@ export default function AboutPage(props: any) {
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.luta rerum maxime! Dolores quasi a iste nisi tempora?</p>
         </div>
       </div>
+      <div className="meetTheTeam">
+          <h1>Meet The Team</h1>
+        </div>
       <div id = "people" className="people">
-        <div className="p1">
-          <img src = 'https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg' alt = "rock"/>
+        <div className="p p1">
+          <h3>Dwayne Johnson</h3>
+          <h6>Big Boi Wrestler</h6>
         </div>
-        <div className="p1">
-          <img src = 'https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg' alt = "rock"/>
+        <div className="p p2">
+        <h3>Dwayne Johnson</h3>
+        <h6>Big Boi Wrestler</h6>
         </div>
-        <div className="p1">
-          <img src = 'https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg' alt = "rock"/>
+        <div className="p p3">
+        <h3>Dwayne Johnson</h3>
+        <h6>Big Boi Wrestler</h6>
         </div>
-        <div className="p1">
-          <img src = 'https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg' alt = "rock"/>
+        <div className="p p4">
+        <h3>Dwayne Johnson</h3>
+        <h6>Big Boi Wrestler</h6>
         </div>
-        <div className="p1">
-          <img src = 'https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg' alt = "rock"/>
+        <div className="p p5">
+        <h3>Dwayne Johnson</h3>
+        <h6>Big Boi Wrestler</h6>
         </div>
-        <div className="p1">
-          <img src = 'https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg' alt = "rock"/>
+        <div className="p p6">
+        <h3>Dwayne Johnson</h3>
+        <h6>Big Boi Wrestler</h6>
         </div>
-        <div className="p1">
-          <img src = 'https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg' alt = "rock"/>
+        <div className="p p1">
+        <h3>Dwayne Johnson</h3>
+        <h6>Big Boi Wrestler</h6>
         </div>
-        <div className="p1">
-          <img src = 'https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg' alt = "rock"/>
+        <div className="p p1">
+        <h3>Dwayne Johnson</h3>
+        <h6>Big Boi Wrestler</h6>
         </div>
-        <div className="p1">
-          <img src = 'https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg' alt = "rock"/>
-        </div>
-        <div className="p1">
-          <img src = 'https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg' alt = "rock"/>
-        </div>
-        <div className="p1">
-          <img src = 'https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg' alt = "rock"/>
-        </div>
-        <div className="p1">
-          <img src = 'https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg' alt = "rock"/>
+        <div className="p p1">
+        <h3>Dwayne Johnson</h3>
+        <h6>Big Boi Wrestler</h6>
         </div>
       </div>
     </div>
