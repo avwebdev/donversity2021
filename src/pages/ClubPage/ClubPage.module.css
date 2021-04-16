@@ -1,9 +1,13 @@
 .club {
-  max-width: 900px;
+  max-width: 100%;
   margin: auto;
   padding: 20px;
   padding-top: 0rem;
   margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .club > h1 {
@@ -18,7 +22,6 @@
 
 .clubImage {
   width: 100%;
-  height: 500px;
   object-fit: cover;
 }
 
@@ -29,21 +32,13 @@
   font-size: 1.2rem;
 }
 
-.clubMedia {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .clubImage {
   width: 100%;
   height: 300px;
 }
 
 .clubVideo {
-  width: 100%;
-  height: 500px;
+  max-width: 500px;
 }
 
 .otherClub {
@@ -58,5 +53,9 @@ a {
 @media (max-width: 500px) {
   .clubVideo {
     max-width: 75%;
+  }
+
+  .mainImage {
+    width: 75%;
   }
 }
