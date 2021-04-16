@@ -45,17 +45,27 @@
   object-fit: cover;
 }
 
-.highlight > span > h4,
-.event > span > h4 {
-  font-weight: 600;
-  font-size: 1rem;
-  margin-top: 15px;
-  margin-bottom: 5px;
+.highlight > span > h4 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
-.highlight > span > p,
+.event > span > h4 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
 .event > span > p {
   font-weight: 500;
+}
+
+.event > span > p, .highlight > span > p {
+  font-size: 1.07rem;
+  font-weight: 400;
 }
 
 #events > .event:first-child {
@@ -122,6 +132,8 @@
 
 #events h5 {
   margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 #expandEvents {
