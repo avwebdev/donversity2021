@@ -8,7 +8,7 @@ function ClubDiv(club: Club) {
   const [hovering, setHovering] = useState(false);
 
   return (
-    <Link to={`/club-fair/${club.id}`}>
+    <Link to={`/club-fair/${club.id}`} className="test">
       <div
         className={styles.club}
         onMouseOver={() => setHovering(true)}

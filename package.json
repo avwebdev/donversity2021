@@ -18,6 +18,7 @@
     "js-yaml": "^3.14.1",
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
+    "react-alice-carousel": "^2.4.0",
     "react-dom": "^17.0.1",
     "react-markdown": "^5.0.3",
     "react-redux": "^7.2.3",
