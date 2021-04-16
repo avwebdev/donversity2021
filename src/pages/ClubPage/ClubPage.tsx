@@ -7,7 +7,6 @@ import styles from "./ClubPage.module.css";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
-import ClubDiv from "./ClubPage";
 import { Link } from "react-router-dom";
 
 interface Params {
@@ -16,15 +15,15 @@ interface Params {
 
 export default function ClubPage() {
 
-  const { useState, useRef, useEffect } = React;  
-  const [hovering, setHovering] = useState(false);
+  
+ 
   const data = useContext(DataContext) as ContentSections;
   const { club } = useParams<Params>();
 
   const clubInfo = data.clubs.find((c) => c.id === club);
   console.log(data.clubs);
 
-  const handleDragStart = (e: { preventDefault: () => any; }) => e.preventDefault();
+ 
   const style = {width:400, paddingRight:20};
 
 
@@ -218,11 +217,7 @@ export default function ClubPage() {
 
     ];
     
-    const responsive = {
-      0: { items: 1 },
-      568: { items: 2 },
-      1024: { items: 3 },
-    };
+   
 
   if (!clubInfo) return <Redirect to="/club-fair" />;
 
