@@ -49,14 +49,15 @@
   font-weight: 500;
   font-size: 1.3rem;
   margin-top: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .event > span > h4 {
   font-weight: 500;
   font-size: 1.2rem;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  display: inline-block;
 }
 
 .event > span > p {
@@ -78,12 +79,6 @@
   display: grid;
   gap: 15px;
   cursor: pointer;
-}
-
-.event > span > h4 {
-  margin-bottom: 10px;
-  margin-top: 0px;
-  display: inline-block;
 }
 
 .event > img {
