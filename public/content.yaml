@@ -1,12 +1,14 @@
 monday:
   motto: Better Together through Art & Music
   dayName: Monday
+  imageUrl: https://donversity.amadorweb.org/images/monday.jpeg
   sections:
-    - title: Our favorite songs of 2021
-      link: /view/favorite-songs
-      description: Some amazing songs for you to jam to!
+
+    - title: This art is jaw-dropping...
+      description: Check out beautiful, creative artwork from Amador's finest!
+      imageUrl: https://th.bing.com/th/id/OIP.IN3TrjlkwpTh2KxksDugDwHaKU?w=192&h=268&c=7&o=5&dpr=2&pid=1.7
       highlight: true
-      imageUrl: https://www.hiboox.com/wp-content/uploads/2020/01/edm.jpg
+      link: "http://art.com"
       content:
 
     - title: Let's make an Amador Playlist!
@@ -43,51 +45,50 @@ monday:
           link: https://google.com
           title: Check out this amazing search engine named...
 
-    - title: This art is jaw-dropping...
-      description: Check out beautiful, creative artwork from Amador's finest!
-      imageUrl: https://th.bing.com/th/id/OIP.IN3TrjlkwpTh2KxksDugDwHaKU?w=192&h=268&c=7&o=5&dpr=2&pid=1.7
-      highlight: true
-      link: "http://art.com"
-      content:
-
 tuesday:
   motto: Better Together but still UnDONe
   dayName: Tuesday
+  imageUrl: https://donversity.amadorweb.org/images/tuesday.jpeg
   sections:
-    - title: "UnDONe: What it means and how it matters"
-      description: We are never done, there is always more to achieve...as a Don!
-      link: "/view/undone"
-      imageUrl: https://donversity.amadorweb.org/images/monday.jpeg
+
+    - title: Our favorite songs of 2021
+      link: /view/favorite-songs
+      description: Some amazing songs for you to jam to!
+      imageUrl: https://www.hiboox.com/wp-content/uploads/2020/01/edm.jpg
       content:
 
-    - title: A video from a teacher.
+    - title: Teacher's Quotes
       description: A teacher's perspective from 2021
-      link: "/view/teacher-vid"
+      link: "/view/teacher-quotes"
+      highlight: true
       imageUrl: https://donversity.amadorweb.org/images/monday.jpeg
       content:
 
     - title: What does Amador mean to you?
       description: Get real with this awesome Padlet!
       link: "/view/what-does-amador-mean-to-you"
+      highlight: true
       imageUrl: https://donversity.amadorweb.org/images/monday.jpeg
       content:
 
 wednesday:
   motto: Better Together through our Interests
   dayName: Wednesday
+  imageUrl: https://donversity.amadorweb.org/images/wednesday.jpeg
   sections:
-    - title: Cooking with Butter!
+    - title: Check out the club fair!
       description: A 3 Part series showcasing the culinary skills of Mr. Butterfield!
-      link: "/view/cooking-with-butter"
+      link: "/club-fair"
       content:
 
-    - title: Virtual Map - Where are you from?
+    - title: Access Activity
       description: See the Donversity of people at our school!
-      link: "/view/virtual-map"
+      link: "/view/access"
       content:
 
 thursday:
   motto: Better Together through Culture & our Planet
+  imageUrl: 
   dayName: Thursday
   sections:
     - title: Cooking with Butter!
@@ -102,6 +103,7 @@ thursday:
 
 friday:
   motto: Better Together as Dons
+  imageUrl: 
   dayName: Friday
   sections:
     - title: Here's the Rally Video

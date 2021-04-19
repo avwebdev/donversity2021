@@ -4,7 +4,7 @@ export const days = [
   "tuesday",
   "wednesday",
   "thursday",
-  "thursday",
+  "friday",
 ];
 export let currentDay: string;
 export let currentDayIndex: number;
@@ -16,7 +16,7 @@ if (today.getFullYear() === 2021 && today.getMonth() === 3) {
       currentDayIndex = 0;
       break;
 
-    case 20:
+    case 18:
       currentDay = "tuesday";
       currentDayIndex = 1;
       break;

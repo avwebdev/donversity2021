@@ -4,59 +4,20 @@ import { Fragment, useContext, useState } from "react";
 import Event from "./Event";
 import styles from "./HomePage.module.css";
 import { DataContext } from "../../misc/DataContext";
+import { currentDay, currentDayIndex, days } from "../../misc/DayInfo";
 import { ContentPage, ContentSection, ContentSections } from "../../types";
 
 export default function HomePage() {
     const data = useContext(DataContext) as ContentSections;
     const [allEventsExpanded, setExpanded] = useState(false);
-    const today = new Date();
-    let currentDay: ContentSection;
-    let currentDayIndex: number;
 
+    const currentDaySections = data[currentDay] as ContentSection;
     const toggleSetExpanded = () => {
         setExpanded(!allEventsExpanded);
     }
 
-    const dayOrder = [data.monday, data.tuesday, data.wednesday, data.thursday, data.friday];
-
-    if (today.getFullYear() === 2021 && today.getMonth() === 3) {
-        switch (today.getDate()) {
-            case 19:
-                currentDay = data.monday;
-                currentDayIndex = 0;
-                break;
-
-            case 20:
-                currentDay = data.tuesday;
-                currentDayIndex = 1;
-                break;
-
-            case 21:
-                currentDay = data.wednesday;
-                currentDayIndex = 2;
-                break;
-
-            case 22:
-                currentDay = data.thursday;
-                currentDayIndex = 3;
-                break;
-
-            case 23:
-                currentDay = data.friday;
-                currentDayIndex = 4;
-                break;
-
-            default:
-                currentDay = data.monday;
-                currentDayIndex = 0;
-        }
-    } else {
-        currentDay = data.monday;
-        currentDayIndex = 0;
-    }
-
     let highlights: ContentPage[] = [];
-    const otherSections = [...currentDay.sections];
+    const otherSections = [...currentDaySections.sections];
     for (let i = 0; i < otherSections.length; i++) {
         const page = otherSections[i];
         if (page.highlight === true) {
@@ -69,7 +30,7 @@ export default function HomePage() {
         <Event highlight={true} page={highlight} key={highlight.link}></Event>
     ));
 
-    let otherElements : JSX.Element[] = [];
+    let otherElements: JSX.Element[] = [];
 
     if (otherSections.length > 0) {
         otherElements.push(
@@ -83,13 +44,14 @@ export default function HomePage() {
 
     let unexpandedEventsGenerated = false;
 
-    for (let i = currentDayIndex-1; i >= 0; i--) {
-        if (dayOrder[i].sections.length>0) {
+    for (let i = currentDayIndex - 1; i >= 0; i--) {
+        const dayData = data[days[i]] as ContentSection
+        if (dayData.sections.length > 0) {
             otherElements.push(
-                <h5>From {dayOrder[i].dayName}</h5>
+                <h5>From {dayData.dayName}</h5>
             );
-    
-            otherElements = otherElements.concat(dayOrder[i].sections.map((page) => (
+
+            otherElements = otherElements.concat(dayData.sections.map((page) => (
                 <Event highlight={false} page={page} key={page.link}></Event>
             )));
 
@@ -100,18 +62,19 @@ export default function HomePage() {
 
 
     if (allEventsExpanded || !unexpandedEventsGenerated) {
-        for (let i = currentDayIndex+1; i < dayOrder.length; i++) {
-            if (dayOrder[i].sections.length>0) {
+        for (let i = currentDayIndex + 1; i < days.length; i++) {
+            const dayData = data[days[i]] as ContentSection;
+            if (dayData.sections.length > 0) {
                 otherElements.push(
-                    <h5>From {dayOrder[i].dayName} (Coming Soon!)</h5>
+                    <h5>From {dayData.dayName} (Coming Soon!)</h5>
                 );
-        
-                otherElements = otherElements.concat(dayOrder[i].sections.map((page) => (
+
+                otherElements = otherElements.concat(dayData.sections.map((page) => (
                     <Event highlight={false} page={page} key={page.link}></Event>
                 )));
 
                 unexpandedEventsGenerated = true;
-                if (!allEventsExpanded) break; 
+                if (!allEventsExpanded) break;
             }
         }
     }
@@ -119,9 +82,9 @@ export default function HomePage() {
     return (
         <Fragment>
             <div id={styles.container}>
-                <div id={styles.dayBanner}>
-                    <h3>{currentDay.dayName}</h3>
-                    <h2>{currentDay.motto}</h2>
+                <div id={styles.dayBanner} style = {{"backgroundImage": `url("${data[currentDay].imageUrl}")`}}>
+                    <h3>{data[currentDay].dayName}</h3>
+                    <h2>{data[currentDay].motto}</h2>
                 </div>
                 <h3>
                     Today's Highlights

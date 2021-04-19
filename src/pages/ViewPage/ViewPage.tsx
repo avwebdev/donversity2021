@@ -1,7 +1,7 @@
 import { Fragment, useContext } from "react";
 import { Redirect, useLocation, Link } from "react-router-dom";
 import { DataContext } from "../../misc/DataContext";
-import { isFuture } from "../../misc/DayContext";
+import { isFuture } from "../../misc/DayInfo";
 import { ContentPage, ContentSection, ContentSections } from "../../types";
 import RenderView from "./RenderView";
 import styles from "./ViewPage.module.css";
