@@ -16,7 +16,7 @@ if (today.getFullYear() === 2021 && today.getMonth() === 3) {
       currentDayIndex = 0;
       break;
 
-    case 18:
+    case 20:
       currentDay = "tuesday";
       currentDayIndex = 1;
       break;
