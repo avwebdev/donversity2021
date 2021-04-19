@@ -1,5 +1,5 @@
 import { Content } from "../../types";
-import VideoView from "../../components/VideoView/VideoView";
+import MediaView from "../../components/MediaView/MediaView";
 import LinksView from "../../components/LinksView/LinksView";
 import MarkdownView from "../../components/MarkdownView/MarkdownView";
 
@@ -8,22 +8,22 @@ export default function renderView(views: Content[] | undefined) {
   const viewArr = [];
   for (const view of views) {
     switch (view.type) {
-      case "VideoView":
+      case "MediaView":
         viewArr.push(
-          <VideoView
-            youtubeUrl={view.link}
+          <MediaView
+            url={view.link}
             description={view.description}
             author={view.author}
+            type={view.contentType}
             key={Math.random()}
-          ></VideoView>
+          ></MediaView>
         );
         break;
       case "LinksView":
         viewArr.push(
           <LinksView
             title={view.title}
-            description={view.description}
-            hook={"Heyho"}
+            link={view.link}
             key={Math.random()}
           ></LinksView>
         );

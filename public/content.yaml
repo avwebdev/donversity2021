@@ -1,33 +1,229 @@
 monday:
-  - title: Its time for the annual club fair!
-    navTitle: Club Fair
-    link: /view/club-fair
-    description: To celebrate our diversity of clubs on campus, they created messages for you all to see!
-    content:
-      - type: VideoView
-        link: https://google.com
-        title: testing 1234
-        author: Subha Das
-        description: 1600 Sat BOI
+  motto: Better Together through Art & Music
+  dayName: Monday
+  imageUrl: /images/monday.jpeg
+  sections:
 
-  - title: Sample Page
-    navTitle: Sample Page
-    description: To celebrate our diversity of clubs on campus, they created messages for you all to see!
-    link: "/view/sample"
-    content:
-      - type: VideoView
-        link: https://www.youtube.com/embed/ZLH1_C-UNHw
-        title: testing 1234
-        author: Subha Das
-        description: 1600 Sat BOI
+    - title: Student Art Gallery! 
+      description: We have so many artistically gifted students on campus! Check out our Virtual Art Gallery to see what these AV students have created!
+      imageUrl: /images/artgallery.png
+      highlight: true
+      link: /view/art-gallery
+      content:
+        - type: LinksView
+          link: https://docs.google.com/presentation/d/1aiuFb6bPNX6TFDBsqPsxqjNWS50HsBfS-9VQKaus8us/edit#slide=id.p
+          title: Link to the art gallery!
 
-      - type: MarkdownView
-        link: sample
+    - title: Songs Represent AV Students! 
+      description: Post a picture on your insta story of music that represents you, music you are currently listening to, or music that just makes you happy! We will compile all of the songs together into a playlist for you to listen to!
+      link: /view/songs
+      highlight: true
+      imageUrl: /images/avsongs.jpg
+      content:
 
-      - type: LinksView
-        link: https://google.com
-        title: Link to google
+
 tuesday:
+  motto: Better Together but still UnDONe
+  dayName: Tuesday
+  imageUrl: /images/tuesday.jpeg
+  sections:
+
+    - title: See What AV Staff Had To Say About Donversity!
+      link: /view/av-staff
+      description: We have such an amazing staff here at AV, and we asked for them to tell us what Donversity means to them! Check out what they had to say. 
+      imageUrl: /images/teacherquotes.jpeg
+      highlight: true
+      content:
+
+    - title: What does Donversity Mean To You? 
+      description: We have created an anonymous Padlet for you to share what Donversity Means to you. The link for this Padlet will be up all week, and we would love to see what AV students have to say! 
+      link: /view/what-does-donversity-mean-to-you
+      highlight: true
+      imageUrl: /images/padlet.png
+      content:
+
 wednesday:
+  motto: Better Together through our Interests
+  dayName: Wednesday
+  imageUrl: /images/wed.jpeg
+  sections:
+    - title: AV Virtual Club Fair!
+      description: Hey Dons! Our Amador clubs have been working extremely hard to produce a club fair for this year! Click here to visit the site! 
+      link: "/club-fair"
+      imageUrl: /images/clubfair.jpeg
+      highlight: true
+      content:
+
+    - title: Access Activity
+      description: Hey Dons! We hope you all enjoyed the discussion you had in your ACCESS classes today! We have attached the link to Amanda Gorman’s Poem if you wish to relisten to it! 
+      link: "/view/access"
+      highlight: true
+      imageUrl: /images/access.jpeg
+      content:
+        - type: MediaView
+          link: https://donversity.amadorweb.org/images/monday.jpeg
+          contentType: image
+          title: testing 1234
+          author: Subha Das
+          description: What a cool video. A 3 part series to melt your brains with joy.
+        
+
 thursday:
+  motto: Better Together through Culture & our Planet
+  imageUrl: /images/thursday.jpeg
+  dayName: Thursday
+  sections:
+    - title: Cooking With Butter Videos
+      description: Hey Dons! We were super fortunate to work with Mr. Butterfield on Donversity this year, and we have created a segment called “Cooking With Butter!” Two of our amazing clubs on campus, The Korean Culture Club and the Black Student Union, teamed up to teach Mr. Butterfield how to make dishes that are special to their Cultures in our very own culinary classrooms! ! Check out the videos and the recipes.
+      link: "/view/cooking-with-butter"
+      imageUrl: /images/butter.jpeg
+      highlight: true
+      content:
+
+    - title: Where are our AV Students From? 
+      description: The Amador community is so diverse; filled with different nationalities, ethnicities, and cultures that we are privileged to attend school with. To visually promote our diverse community, we have attached a link to a virtual map and a google form where you may submit virtual pins that show where you are from! 
+      link: "/view/virtual-map"
+      imageUrl: /images/virtualmap.jpeg
+      highlight: true
+      content: 
+
 friday:
+  motto: Better Together as Dons
+  imageUrl: /images/friday.jpeg
+  dayName: Friday
+  sections:
+    - title: AV DONVERSITY VIRTUAL RALLY 2021
+      description: For the first time ever, the AV leadership class was able to turn one of their most highly anticipated rallies on campus into a virtual format! With the help from student groups, Amador UAV, and our wonderful hosts, Soumya Sahay and Nick Strain, we were able to create a 2021 Virtual Donversity Rally! With performances from Bollywood and Bhangra to our Black Student Union, we hope there is something for everyone to enjoy from the rally! 
+      link: "/view/rally-video"
+      highlight: true
+      imageUrl: /images/rally.jpeg
+      content:
+
+    - title: Don Deckout!
+      highlight: true
+      description: For our last day, we are recognizing how we are better together as Dons! Although we are all unique in our own ways, we all share being a Don! So, post a pic decked out in your AV gear and tag @avhsdons to be featured on their instagram!
+      link: "/view/deckout"
+      imageUrl: /images/deckout.jpeg
+      content:
+
+clubs:
+  - name: Key Club
+    id: key-club
+    description:
+      Key Club is a club all about providing service for our community, building
+      character and developing leadership. This club provides so many varieties of volunteering
+      opportunities for members to help out the community. In addition, it is a club
+      where you will meet many new people and gain valuable friendships. Overall, it
+      is a club worth joining!!
+    image: "key-club.jpg"
+
+  - name: Anime/Manga Club
+    id: anime-manga-club
+    description:
+      Anime and Manga Club is a small chill and relaxing club where you can
+      hang out with friends and people who have the same interests as you. We watch
+      anime, read manga, chat, and have drawing tutorials.
+    image: "anime-club.png"
+
+  - name: Black Student Union
+    id: black-student-union
+    description: We as a black student Union strive to bring the black students on the Amador campus together. In the bsu we hope to create a safe space to share our experiences, bond through events like the black college expo, discussions, and our African culture. It’s a place to spend time together, talk about our history, current events, and anything on the students minds. This year we joined forces with the foothill bsu to widen our bsu community in Pleasanton and we hope to keep the relationship and keep working together. We also hope to connect with other schools in the bay area doing other black student summits as we did one earlier this year. We even did an outreach helping our broader community by feeding the homeless at a presbyterian church in Castro Valley by cooking and serving the meal to the shelter they have there. We cooked a meat sauce with pasta, soup, bread, and brought muffins, yogurt, and fruit for breakfast the next day. We hope to continue doing this in the next year.
+    image: "black-student-union.jpg"
+
+  - name: AV Latino Club
+    id: latino-club
+    description:
+      Our goal is to help welcome every ethnicity. We most importantly support
+      each other and focus on new students in the US/PUSD by helping and supporting  them
+      socially and having lunch with them. We love to participate in fundraising for
+      our school and volunteering for our community.
+    image: "latino-club.jpg"
+
+  - name: Marching Band
+    id: marching-band
+    description: ""
+    video: https://doc-0c-7s-docs.googleusercontent.com/docs/securesc/ea30o06ogn9hlgmh3m72phcs4tct2fdu/stgrr6nja8qq2jcpakruone8ustcbf5u/1618421025000/06852935900433351037/01562584479799057272/1e254WzXJLJQKCj-ZRvL9JdjQKT1Qf_4U?e=download&authuser=1
+    image: "marching-band.jpg"
+
+  - name: AV UI/UX Design Club
+    id: ui-ux-club
+    description:
+      AV UI/UX Design Club is an inclusive community that bridges the gap
+      between technology and encourages students to engage in UI/UX Design. We build
+      and design virtual and augmented reality, voice applications, and web and mobile
+      platforms as well as 3D model. We also learn about the foundations of UI/UX Design,
+      use industry tools, interact with guest speakers, and hold design workshops. We
+      recently held a virtual/augmented reality workshop to build mars communities for
+      30 PUSD middle schoolers!
+    image: "ui-ux-club.png"
+
+  - name: Kids Against Hunger Club
+    id: kids-against-hunger
+    description:
+      We pack nutritious meals with the Kids Against Hunger non-profit organization
+      to feed families locally and globally. Our goal is to cease starvation rates and
+      help prevent malnutrition while empowering others to make a difference in our
+      community. If you have any questions, email us at avhskah@gmail.com or dm us on
+      Instagram @avhskah, and join our Remind by texting @avkah2021 to 81010!
+    image: "kids-against-hunger.jpg"
+    video: "kids-against-hunger.mp4"
+
+  - name: AV Science Team
+    id: science-team
+    description:
+      "The AV Science Olympiad team prepares and competes in the annual Bay
+      Area Regional Science Olympiad (BARSO) and Golden Gate Science Olympiad Invitationals
+      (GGSO), consisting of many different events, ranging from earth science to anatomy
+      and physiology to robotics. As we prepare for each event, AV Science Team aims
+      to foster an encouraging environment of communication and collaboration between
+      teammates where all students study science with a positive mindset. This year,
+      after our teams'' hard work, Team A, B, and C placed 9th, 12th, and 15th respectively
+      in the Bay Area! If you are interested in science and willing to put in the hard
+      work (and maybe win some prizes!), sign up for next year's season (21-22) on our website: https://avscioly.weebly.com/."
+    image: "science-team.jpg"
+
+  - name: Neuroscience Club
+    id: neuroscience-club
+    description: |-
+      Our Neuroscience club connects students with peers who have a passion about understanding the complexities and intricate functions of the brain. The club is split into groups that research various neuroscience topics and share their discoveries with members about the relationship between our brain, our thoughts, and our behavior.
+
+      Our bi-weekly meeting offers club members the opportunity to read scientific literature and research about newsworthy developments in the field of neuroscience. Meetings end with a fun Kahoot to win boba for each presentation topic!
+
+      We’re trying to apply what we’ve learned about neurological diseases by developing an iOS app to help patients with dementia track their symptoms, which is scheduled to be finished and released in the summer of 2021!
+
+      Anyone with a curiosity about the brain and hoping to find ways to help yourself, your friends, your loved ones, or your community is welcome to join us!
+    image: "neuroscience-club.jpeg"
+    video: "neuroscience-club.mp4"
+
+  - name: Girls Who Start
+    id: girls-who-start
+    description:
+      AVHS Girls Who Start encourages the next generation of businesspeople
+      by teaching valuable business skills through Zoom workshops, introducing trailblazers
+      in many aspects of business, hosting Zoom “fireside chats” with business executives
+      and professionals (CEO, manager, director, etc.) from Pleasanton and surrounding
+      areas and virtual “hackathons” where club members plan a product/design to fulfill
+      a certain purpose and make a business proposal to the club officers that they
+      will be scored on.
+    image: "girls-who-start.png"
+
+  - name: AV Space & Astronomy
+    id: space-and-astronomy
+    description:
+      We are a club open to anyone from experts to amateurs interested in
+      astronomy! We cover all aspects of the vast field of astronomy from engineering,
+      astrobiology and everything in between. We also discuss current events as well
+      as developments in the astronomical world. This year especially we have had a
+      focus on the Perseverance rover, the feat of engineering that it is, and how this
+      mission is paving the way for further exploration of Mars. Feel free to send us
+      an email at avastronomers@gmail.com and follow us on Instagram @avastronomers!
+    image: "space-club.JPG"
+
+  - name: AV Bollywood Ensemble
+    id: bollywood-ensemble
+    description:
+      Amador Valley Bollywood ensemble is a music based club at school. This
+      club combine aspects of Indian and Western culture through music and stylistic
+      elements. This club strives to create a welcoming environment for all ranges of
+      musical abilities.
+    image: "bollywood-club.png"
