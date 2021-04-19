@@ -24,24 +24,25 @@ export default function ClubPage() {
   return (
     <div className={styles.club}>
       <h1>{clubInfo.name}</h1>
-      <img
-        className={styles.mainImage}
-        src={`/clubs/${clubInfo.image}`}
-        alt={clubInfo.name}
-      />
+      <div className={styles.clubMedia}>
+        <img
+          className={styles.mainImage}
+          src={`/clubs/${clubInfo.image}`}
+          alt={clubInfo.name}
+        />
+        {clubInfo.video && (
+          <MediaView
+            className={styles.clubVideo}
+            type="video"
+            url={`/clubs/${clubInfo.video}`} autoplay="false"
+          />
+        )}
+      </div>
       {clubInfo.description.split("\n").map((fragment, i) => (
         <p key={i} className={styles.clubDescription}>
           {fragment}
         </p>
       ))}
-      {clubInfo.video && (
-        <MediaView
-          className={styles.clubVideo}
-          type="video"
-          url={`/clubs/${clubInfo.video}`}
-        />
-      )}
-      <div style={{ marginBottom: "30px" }}></div>
       <AliceCarousel
         mouseTracking
         items={data.clubs
