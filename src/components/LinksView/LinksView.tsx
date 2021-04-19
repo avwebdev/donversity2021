@@ -7,7 +7,7 @@ export default function LinksView({
   return (
     <div className={styles.container}>
       <FontAwesomeIcon icon={["fas", "external-link-alt"]} style={iconStyles}></FontAwesomeIcon>
-      <a href={link}>{title}</a>
+      <a href={link} target="_blank" rel="noreferrer">{title}</a>
     </div>
   );
 }
