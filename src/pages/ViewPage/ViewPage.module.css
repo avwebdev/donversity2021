@@ -20,6 +20,27 @@
   text-align: center;
 }
 
+#toHome {
+  margin-top: 3em;
+  font-size: 1.3rem;
+  padding-bottom: 2px;
+  margin-bottom: 2em;
+  font-weight: 300;
+  color: black;
+  display: inline-block;
+  border-bottom: 0.7px solid black;
+}
+
+
+#toHome > a {
+  color: black;
+  text-decoration: none;
+}
+
+#comingSoon {
+  font-size: 1.1rem;
+}
+
 @media (max-width: 790px) {
 
   #container { 

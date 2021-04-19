@@ -33,6 +33,7 @@ export interface ContentSections {
   thursday: ContentSection;
   friday: ContentSection;
   clubs: Club[];
+  [id: string]: any;
 }
 
 export interface ContentSection {

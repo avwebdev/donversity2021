@@ -1,31 +1,17 @@
 import styles from "./LinksView.module.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 export default function LinksView({
-  title,
-  description,
-  hook,
-  youtubeUrl = false,
+  title, 
+  link,
 }: any) {
   return (
-    <section>
-      <div className={styles.hook}>
-        {hook}
-        <div className={`${styles.cards} card`}>
-          <div className="card-body">
-            <h5 className="card-title">{title}</h5>
-
-            <p className="card-text">{description}</p>
-            <a
-              href={youtubeUrl}
-              target={"_blank"}
-              className="card-link"
-              rel="noreferrer"
-            >
-              link
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className={styles.container}>
+      <FontAwesomeIcon icon={["fas", "external-link-alt"]} style={iconStyles}></FontAwesomeIcon>
+      <a href={link}>{title}</a>
+    </div>
   );
+}
+
+const iconStyles = {
+  "marginRight": "10px"
 }

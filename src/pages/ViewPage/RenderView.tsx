@@ -23,8 +23,7 @@ export default function renderView(views: Content[] | undefined) {
         viewArr.push(
           <LinksView
             title={view.title}
-            description={view.description}
-            hook={"Heyho"}
+            link={view.link}
             key={Math.random()}
           ></LinksView>
         );
