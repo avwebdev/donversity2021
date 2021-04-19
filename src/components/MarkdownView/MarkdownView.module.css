@@ -1,0 +1,24 @@
+#container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#container h1 {
+    font-size: 1.5rem;
+}
+
+#container h2 {
+    font-size: 1.3rem;
+}
+
+#container h3 {
+    font-size: 1.1rem;
+}
+
+#container h4 {
+    font-size: 0.9rem;
+}
+
+#container p {
+    padding-top: 0px;
+}

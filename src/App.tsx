@@ -3,14 +3,18 @@ import { Switch, Route } from "react-router";
 import ViewPage from "./pages/ViewPage/ViewPage";
 import { LoaderPage, Overlay } from "./pages/LoaderPage/LoaderPage";
 import About from "./pages/AboutPage/AboutPage";
-import VideoView from "./components/VideoView/VideoView";
-import LinksView from "./components/LinksView/LinksView";
-import Navbar from "./components/Navbar/Navbar";
-// import logo from './logo.svg';
 import { Fragment, useState } from "react";
 import { load } from "js-yaml";
 import { DataContext } from "./misc/DataContext";
-import MapChart from "./components/Map/Map";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import HomePage from "./pages/HomePage/HomePage";
+import Navbar from "./components/Navbar/Navbar";
+import ClubsPage from "./pages/ClubsPage/ClubsPage";
+import ClubPage from "./pages/ClubPage/ClubPage";
+import Footer from "./components/Footer/Footer";
+
+library.add(fas);
 
 function App() {
   const [waitTime, fadeTime] = [3000, 500];
@@ -42,38 +46,28 @@ function App() {
 
   return (
     <DataContext.Provider value={data}>
+      <Navbar />
       <Switch>
         <Route path="/view/:view">
-          <ViewPage></ViewPage>
+          <ViewPage />
         </Route>
         <Route path="/about">
-          <About></About>
+          <About />
+        </Route>
+        <Route path="/club-fair/:club">
+          <ClubPage />
+        </Route>
+        <Route path="/club-fair">
+          <ClubsPage />
         </Route>
         <Route path="/load">
-          <LoaderPage></LoaderPage>
-        </Route>
-        <Route path="/video-view">
-          <VideoView
-            description="This video showcases Mr. Butterfield in all his glory."
-            author="Keerthi Kalyaan"
-            youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"
-          ></VideoView>
-        </Route>
-        <Route path="/link-view">
-          <LinksView
-            title="Some Title"
-            description="This video showcases Mr. Butterfield in all his glory."
-            hook="Keerthi Kalyaan"
-            youtubeUrl="https://www.youtube.com/embed/a5P62hp3znU"
-          ></LinksView>
-        </Route>
-        <Route path="/map">
-          <MapChart></MapChart>
+          <LoaderPage />
         </Route>
         <Route path="/">
-          <Navbar></Navbar>
+          <HomePage />
         </Route>
       </Switch>
+      <Footer />
     </DataContext.Provider>
   );
 }

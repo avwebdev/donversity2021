@@ -1,0 +1,22 @@
+@media only screen and (min-width: 768px) {
+  iframe {
+    height: 13em;
+  }
+}
+
+#container {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#container > p {
+  color: darkslategrey;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 0.3rem;
+  padding-top: 0;
+}
+
+#container > div > img {
+  width: 100%;
+}

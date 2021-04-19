@@ -16,6 +16,7 @@ export function LoaderPage({ fadingOut }: any) {
   if (!pyroActivated) {
     setTimeout(() => {
       setPyroActivated(true);
+      document.body.style.overflow = "hidden";
     }, 500);
     pyro = <div className="pyro"></div>;
   }
@@ -52,6 +53,7 @@ export function Overlay({ fadingOut, waitTime, fadeTime }: any) {
         setWaitingDone(true);
       }, waitTime);
     } else {
+      document.body.style.overflow = "initial";
       const style = {
         opacity: "1",
         transition: `opacity ${fadeTime / 1000}s`,
