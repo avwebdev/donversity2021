@@ -20,7 +20,7 @@ export default function MediaView({ description, url, type, className }: any) {
 
     case "video": {
       return (
-        <video controls className={className}>
+        <video controls autoPlay className={className}>
           <source src={url} />
         </video>
       );
