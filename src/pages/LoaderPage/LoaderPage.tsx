@@ -38,7 +38,7 @@ export function LoaderPage({ fadingOut }: any) {
         </div>
       </div>
       <div id={styles.loadingMessage}>
-        Did you know: Amador Valley has 15 bathrooms?
+        Did you know: Amador Valley graduated its first class in 1923?
       </div>
     </Fragment>
   );
