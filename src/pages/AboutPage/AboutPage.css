@@ -58,6 +58,9 @@ div, footer{
   padding: 5%;
   line-height: 10vh;
 }
+.who{
+  line-height: 7vh;
+}
 @media(max-width: 1100px){
   .ok{
     grid-template-columns: 1fr;
@@ -71,6 +74,9 @@ div, footer{
     padding: 5%;
     font-weight: lighter;
     line-height: 5vh;
+  }
+  .who{
+    line-height: 4vh;
   }
 }
 .what{
@@ -107,43 +113,13 @@ div, footer{
   opacity: 0.7;
 }
 .rooted{
-  height: 400vh;
+  height: 600vh;
   width: 100%;
 }
+.team{
+  background-color: white;
+}
 
-.people{
-  height: 200vh;
-  background-color:white;
-  color: #8c7ae6;
-  font-size:36px;
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-.p1{
-  background-image: url('https://43laq7hfw6b26gd6y23qp1cq-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/Ben-Marcum-Photography-Headshot-Photographer-Louisville-Kentucky-Professional-Headshots-Dheeraj-Muddasani-Sep-11-2017-223-1024x819.jpg');
-  background-size: cover;
-}
-.p2{
-  background-image: url('https://images.squarespace-cdn.com/content/v1/55550428e4b0d770e3f981ab/1556735947519-FFKVT8M0NXM4XOR0TSV4/ke17ZwdGBToddI8pDm48kNskRmI0BWA_5BbSP7w5fxoUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcrSE9TuikxunCIvxhiHV1d9s8_ONrEB_pXn7BM6FVWGHcXaz5OAcxgkcgDk7TY0a9/corporate+headshot+with+happy+hour+headshot');
-  background-size: cover;
-}
-.p3{
-  background-image: url('https://images.squarespace-cdn.com/content/v1/590796583a0411c14afba5cb/1585694801465-BLVCJ96GW0R2O2HBFHS6/ke17ZwdGBToddI8pDm48kKbYUC7ko4ep_M3O09c6DLZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyUjG47s4lQqa3kGWpoR_DitVobFN0LmU1WvG_uZkJwkPR2-Fb7zwugw-NXPqcoGjo/nia-javier-dear-white-people-headshots-caitlin-fisher-photography');
-  background-size: cover;
-}
-.p4{
-  background-image: url('https://marydupriestudio.com/wordpress/wp-content/uploads/2016/04/Detroit_Mi_Actors_Headshot_Photographers_105-2.jpg');
-  background-size: cover;
-}
-.p5{
-  background-image: url('http://www.photopixels.com/portraits/images/Business%20Headshot%20Gray.jpg');
-  background-size: cover;
-}
-.p6{
-  background-image: url('https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2016/02/Headshot-Photography-London-1052.jpeg?fit=750%2C500&ssl=1');
-  background-size: cover;
-}
 
 .p h3, .p h6{
   color: white;
@@ -166,18 +142,12 @@ div, footer{
     width: 100%;
   }
   .p{
+    background-color: white;
     height: 50vh;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .people{
-    background-color:white;
-    color: #8c7ae6;
-    font-size:36px;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
+
   .what, .who{
     margin-left: 0;
     margin-right: 0;
@@ -185,3 +155,46 @@ div, footer{
   }
 }
 
+
+.people{
+  padding: 16px;
+  border: 1px solid #9c88ff;
+  background: #9c88ff;
+  color: white;
+  height: 250px;
+  margin-top: 16px;
+  text-align: center;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 5px rgb(236, 233, 233);
+}
+.people:hover{
+  background-color: white;
+  color: #9c88ff;
+}
+.people h3{
+  padding-top: 16px;
+}
+.people h6{
+  display: block;
+  border-radius: 5px;
+  background-color: #f1c40f;
+  padding: 16px;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+}
+.team{
+  padding: 20px;
+}
+
+@keyframes color-change {
+  0% { color: #9c88ff; }
+  50% { color:#bbb2e9; }
+  100% { color: #9c88ff; }
+}
+body, div{
+ scroll-behavior: smooth;
+}
