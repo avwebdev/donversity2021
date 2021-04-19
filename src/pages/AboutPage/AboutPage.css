@@ -196,6 +196,5 @@ div, footer{
   100% { color: #9c88ff; }
 }
 body, div{
-  overflow-x: hidden;
  scroll-behavior: smooth;
 }
