@@ -1,19 +1,22 @@
 monday:
   motto: Better Together through Art & Music
   dayName: Monday
-  imageUrl: https://donversity.amadorweb.org/images/monday.jpeg
+  imageUrl: /images/monday.jpeg
   sections:
 
     - title: Student Art Gallery! 
       description: We have so many artistically gifted students on campus! Check out our Virtual Art Gallery to see what these AV students have created!
       imageUrl: /images/artgallery.png
       highlight: true
-      link: "http://art.com"
+      link: /view/art-gallery
       content:
+        - type: LinksView
+          link: https://docs.google.com/presentation/d/1aiuFb6bPNX6TFDBsqPsxqjNWS50HsBfS-9VQKaus8us/edit#slide=id.p
+          title: Link to the art gallery!
 
     - title: Songs Represent AV Students! 
-      description: What are y'all feeling? Some hip-hop? Rap? Jazz?
-      link: /view/playlist
+      description: Post a picture on your insta story of music that represents you, music you are currently listening to, or music that just makes you happy! We will compile all of the songs together into a playlist for you to listen to!
+      link: /view/songs
       highlight: true
       imageUrl: /images/avsongs.jpg
       content:
@@ -22,7 +25,7 @@ monday:
 tuesday:
   motto: Better Together but still UnDONe
   dayName: Tuesday
-  imageUrl: https://donversity.amadorweb.org/images/tuesday.jpeg
+  imageUrl: /images/tuesday.jpeg
   sections:
 
     - title: See What AV Staff Had To Say About Donversity!
@@ -42,7 +45,7 @@ tuesday:
 wednesday:
   motto: Better Together through our Interests
   dayName: Wednesday
-  imageUrl: https://donversity.amadorweb.org/images/wednesday.jpeg
+  imageUrl: /images/wed.jpeg
   sections:
     - title: AV Virtual Club Fair!
       description: Hey Dons! Our Amador clubs have been working extremely hard to produce a club fair for this year! Click here to visit the site! 
@@ -52,9 +55,10 @@ wednesday:
       content:
 
     - title: Access Activity
-      description: See the Donversity of people at our school!
+      description: Hey Dons! We hope you all enjoyed the discussion you had in your ACCESS classes today! We have attached the link to Amanda Gorman’s Poem if you wish to relisten to it! 
       link: "/view/access"
       highlight: true
+      imageUrl: /images/access.jpeg
       content:
         - type: MediaView
           link: https://donversity.amadorweb.org/images/monday.jpeg
@@ -66,7 +70,7 @@ wednesday:
 
 thursday:
   motto: Better Together through Culture & our Planet
-  imageUrl: 
+  imageUrl: /images/thursday.jpeg
   dayName: Thursday
   sections:
     - title: Cooking With Butter Videos
@@ -85,14 +89,14 @@ thursday:
 
 friday:
   motto: Better Together as Dons
-  imageUrl: 
+  imageUrl: /images/friday.jpeg
   dayName: Friday
   sections:
     - title: AV DONVERSITY VIRTUAL RALLY 2021
-      description: Dance, music, art, UAVs, its got it all. Check out the video!
+      description: For the first time ever, the AV leadership class was able to turn one of their most highly anticipated rallies on campus into a virtual format! With the help from student groups, Amador UAV, and our wonderful hosts, Soumya Sahay and Nick Strain, we were able to create a 2021 Virtual Donversity Rally! With performances from Bollywood and Bhangra to our Black Student Union, we hope there is something for everyone to enjoy from the rally! 
       link: "/view/rally-video"
       highlight: true
-      imageUrl: rally.jpeg
+      imageUrl: /images/rally.jpeg
       content:
 
     - title: Don Deckout!
@@ -123,8 +127,7 @@ clubs:
 
   - name: Black Student Union
     id: black-student-union
-    description: |-
-      We as a black student Union strive to bring the black students on the Amador campus together. In the bsu we hope to create a safe space to share our experiences, bond through events like the black college expo, discussions, and our African culture. It’s a place to spend time together, talk about our history, current events, and anything on the students minds.This year we joined forces with the foothill bsu to widen our bsu community in Pleasanton and we hope to keep the relationship and keep working together. We also hope to connect with other schools in the bay area doing other black student summits as we did one earlier this year. We even did an outreach helping our broader community by feeding the homeless at a presbyterian church in Castro Valley by cooking and serving the meal to the shelter they have there. We cooked a meat sauce with pasta, soup, bread, and brought muffins, yogurt, and fruit for breakfast the next day. We hope to continue doing this in the next year.
+    description: We as a black student Union strive to bring the black students on the Amador campus together. In the bsu we hope to create a safe space to share our experiences, bond through events like the black college expo, discussions, and our African culture. It’s a place to spend time together, talk about our history, current events, and anything on the students minds. This year we joined forces with the foothill bsu to widen our bsu community in Pleasanton and we hope to keep the relationship and keep working together. We also hope to connect with other schools in the bay area doing other black student summits as we did one earlier this year. We even did an outreach helping our broader community by feeding the homeless at a presbyterian church in Castro Valley by cooking and serving the meal to the shelter they have there. We cooked a meat sauce with pasta, soup, bread, and brought muffins, yogurt, and fruit for breakfast the next day. We hope to continue doing this in the next year.
     image: "black-student-union.jpg"
 
   - name: AV Latino Club
@@ -135,6 +138,12 @@ clubs:
       socially and having lunch with them. We love to participate in fundraising for
       our school and volunteering for our community.
     image: "latino-club.jpg"
+
+  - name: Marching Band
+    id: marching-band
+    description: ""
+    video: https://doc-0c-7s-docs.googleusercontent.com/docs/securesc/ea30o06ogn9hlgmh3m72phcs4tct2fdu/stgrr6nja8qq2jcpakruone8ustcbf5u/1618421025000/06852935900433351037/01562584479799057272/1e254WzXJLJQKCj-ZRvL9JdjQKT1Qf_4U?e=download&authuser=1
+    image: "marching-band.jpg"
 
   - name: AV UI/UX Design Club
     id: ui-ux-club

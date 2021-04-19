@@ -34,7 +34,7 @@ export default function ClubPage() {
           <MediaView
             className={styles.clubVideo}
             type="video"
-            url={`/clubs/${clubInfo.video}`} autoplay="false"
+            url={`/clubs/${clubInfo.video}`} 
           />
         )}
       </div>
