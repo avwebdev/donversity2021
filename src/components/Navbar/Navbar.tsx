@@ -54,9 +54,9 @@ export default function Navbar() {
           <Link to="/club-fair" onClick={toggleNavbar}>
             Club Fair
           </Link>
-          <Link to="https://google.com" onClick={toggleNavbar}>
+          <a href="https://docs.google.com/presentation/d/1aiuFb6bPNX6TFDBsqPsxqjNWS50HsBfS-9VQKaus8us/edit#slide=id.p" onClick={toggleNavbar} target="_blank" rel="noreferrer">
             Art Gallery
-          </Link>
+          </a>
         </div>
 
         <div id={styles.dayContent} className="container">
