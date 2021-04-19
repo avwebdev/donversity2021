@@ -27,7 +27,7 @@ tuesday:
 
     - title: See What AV Staff Had To Say About Donversity!
       link: /view/av-staff
-      description: We have such an amazing staff here at AV, and we asked for them to tell us what Donversity means to them! Click here to see what they had to say. 
+      description: We have such an amazing staff here at AV, and we asked for them to tell us what Donversity means to them! Check out what they had to say. 
       imageUrl: /images/teacherquotes.jpeg
       highlight: true
       content:
@@ -70,7 +70,7 @@ thursday:
   dayName: Thursday
   sections:
     - title: Cooking With Butter Videos
-      description: Hey Dons! We were super fortunate to work with Mr. Butterfield on Donversity this year, and we have created a segment called “Cooking With Butter!” Two of our amazing clubs on campus, The Korean Culture Club and the Black Student Union, teamed up to teach Mr. Butterfield how to make dishes that are special to their Cultures in our very own culinary classrooms! ! Click here to access the videos and the recipes.
+      description: Hey Dons! We were super fortunate to work with Mr. Butterfield on Donversity this year, and we have created a segment called “Cooking With Butter!” Two of our amazing clubs on campus, The Korean Culture Club and the Black Student Union, teamed up to teach Mr. Butterfield how to make dishes that are special to their Cultures in our very own culinary classrooms! ! Check out the videos and the recipes.
       link: "/view/cooking-with-butter"
       imageUrl: /images/butter.jpeg
       highlight: true
