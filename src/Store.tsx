@@ -14,6 +14,7 @@ import { Provider, useDispatch } from "react-redux";
 // Firebase Imports
 import firebase from "firebase/app";
 import "firebase/firestore";
+import "firebase/analytics";
 import firebaseConfig from "./misc/firebaseConfig";
 import {
   getFirebase,
@@ -118,6 +119,12 @@ const persistor = persistStore(store);
 firebase.initializeApp(firebaseConfig);
 
 firebase.firestore();
+
+export let analytics: firebase.analytics.Analytics | null = null;
+
+firebase.analytics.isSupported().then((isSupported) => {
+  if (isSupported) analytics = firebase.analytics();
+});
 
 const ReduxStore: FC = ({ children }) => {
   return (

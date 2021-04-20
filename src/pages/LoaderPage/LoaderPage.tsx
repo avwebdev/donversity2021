@@ -3,8 +3,14 @@ import "./LoaderPage.scss";
 import styles from "./LoaderPage.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
+import { analytics } from "../../Store";
 
 export function LoaderPage({ fadingOut }: any) {
+  analytics?.logEvent("page_view", {
+    page_title: "About",
+    page_path: "/load",
+  });
+
   const [pyroActivated, setPyroActivated] = useState(false);
   let pyro: JSX.Element = (
     <div className="pyro">

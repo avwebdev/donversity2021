@@ -8,6 +8,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import { Link } from "react-router-dom";
+import { analytics } from "../../Store";
 
 interface Params {
   club: string;
@@ -20,6 +21,11 @@ export default function ClubPage() {
   const clubInfo = data.clubs.find((c) => c.id === club);
 
   if (!clubInfo) return <Redirect to="/club-fair" />;
+
+  analytics?.logEvent("page_view", {
+    page_title: `Club ${clubInfo.name}`,
+    page_path: `/club-fair/${club}`,
+  });
 
   return (
     <div className={styles.club}>
@@ -34,7 +40,7 @@ export default function ClubPage() {
           <MediaView
             className={styles.clubVideo}
             type="video"
-            url={`/clubs/${clubInfo.video}`} 
+            url={`/clubs/${clubInfo.video}`}
           />
         )}
       </div>
