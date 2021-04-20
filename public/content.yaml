@@ -31,11 +31,7 @@ tuesday:
       imageUrl: /images/teacherquotes.jpeg
       highlight: true
       content:
-        - type: MediaView
-          contentType: image
-          link: /images/teacherquotes.jpeg
-          title: ""
-
+      
         - type: MarkdownView
           link: quotes
 

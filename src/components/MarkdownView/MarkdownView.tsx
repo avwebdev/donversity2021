@@ -34,7 +34,7 @@ export default function MarkdownView({ file }: MarkdownViewProps) {
 
   return (
     <div id={styles.container}>
-      <ReactMarkdown plugins={[gfm]}>{raw}</ReactMarkdown>
+      <ReactMarkdown plugins={[gfm]} allowDangerousHtml>{raw}</ReactMarkdown>
     </div>
   )
 }
