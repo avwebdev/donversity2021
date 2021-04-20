@@ -3,8 +3,7 @@ monday:
   dayName: Monday
   imageUrl: /images/monday.jpeg
   sections:
-
-    - title: Student Art Gallery! 
+    - title: Student Art Gallery!
       description: We have so many artistically gifted students on campus! Check out our Virtual Art Gallery to see what these AV students have created!
       imageUrl: /images/artgallery.png
       highlight: true
@@ -14,33 +13,50 @@ monday:
           link: https://docs.google.com/presentation/d/1aiuFb6bPNX6TFDBsqPsxqjNWS50HsBfS-9VQKaus8us/edit#slide=id.p
           title: Link to the art gallery!
 
-    - title: Songs Represent AV Students! 
+    - title: Songs Represent AV Students!
       description: Post a picture on your insta story of music that represents you, music you are currently listening to, or music that just makes you happy! We will compile all of the songs together into a playlist for you to listen to!
       link: /view/songs
       highlight: true
       imageUrl: /images/avsongs.jpg
       content:
 
-
 tuesday:
   motto: Better Together but still UnDONe
   dayName: Tuesday
   imageUrl: /images/tuesday.jpeg
   sections:
-
     - title: See What AV Staff Had To Say About Donversity!
       link: /view/av-staff
-      description: We have such an amazing staff here at AV, and we asked for them to tell us what Donversity means to them! Check out what they had to say. 
+      description: We have such an amazing staff here at AV, and we asked for them to tell us what Donversity means to them! Check out what they had to say.
       imageUrl: /images/teacherquotes.jpeg
       highlight: true
       content:
+        - type: MediaView
+          contentType: image
+          link: /images/teacherquotes.jpeg
+          title: ""
 
-    - title: What does Donversity Mean To You? 
-      description: We have created an anonymous Padlet for you to share what Donversity Means to you. The link for this Padlet will be up all week, and we would love to see what AV students have to say! 
+        - type: MarkdownView
+          link: quotes
+
+        - type: LinksView
+          link: https://padlet.com/so5801/e6bu2lv6fr6rp8sl
+          title: What does Donversity mean to you? Chime in on this padlet!
+
+    - title: What does Donversity Mean To You?
+      description: We have created an anonymous Padlet for you to share what Donversity Means to you. The link for this Padlet will be up all week, and we would love to see what AV students have to say!
       link: /view/what-does-donversity-mean-to-you
       highlight: true
       imageUrl: /images/padlet.png
       content:
+        - type: MediaView
+          contentType: image
+          link: /images/padlet.png
+          title: ""
+
+        - type: LinksView
+          link: https://padlet.com/so5801/e6bu2lv6fr6rp8sl
+          title: Check out the padlet!
 
 wednesday:
   motto: Better Together through our Interests
@@ -48,14 +64,14 @@ wednesday:
   imageUrl: /images/wed.jpeg
   sections:
     - title: AV Virtual Club Fair!
-      description: Hey Dons! Our Amador clubs have been working extremely hard to produce a club fair for this year! Click here to visit the site! 
+      description: Hey Dons! Our Amador clubs have been working extremely hard to produce a club fair for this year! Click here to visit the site!
       link: "/club-fair"
       imageUrl: /images/clubfair.jpeg
       highlight: true
       content:
 
     - title: Access Activity
-      description: Hey Dons! We hope you all enjoyed the discussion you had in your ACCESS classes today! We have attached the link to Amanda Gorman’s Poem if you wish to relisten to it! 
+      description: Hey Dons! We hope you all enjoyed the discussion you had in your ACCESS classes today! We have attached the link to Amanda Gorman’s Poem if you wish to relisten to it!
       link: "/view/access"
       highlight: true
       imageUrl: /images/access.jpeg
@@ -66,7 +82,6 @@ wednesday:
           title: testing 1234
           author: Subha Das
           description: What a cool video. A 3 part series to melt your brains with joy.
-        
 
 thursday:
   motto: Better Together through Culture & our Planet
@@ -80,12 +95,12 @@ thursday:
       highlight: true
       content:
 
-    - title: Where are our AV Students From? 
-      description: The Amador community is so diverse; filled with different nationalities, ethnicities, and cultures that we are privileged to attend school with. To visually promote our diverse community, we have attached a link to a virtual map and a google form where you may submit virtual pins that show where you are from! 
+    - title: Where are our AV Students From?
+      description: The Amador community is so diverse; filled with different nationalities, ethnicities, and cultures that we are privileged to attend school with. To visually promote our diverse community, we have attached a link to a virtual map and a google form where you may submit virtual pins that show where you are from!
       link: "/view/virtual-map"
       imageUrl: /images/virtualmap.jpeg
       highlight: true
-      content: 
+      content:
 
 friday:
   motto: Better Together as Dons
@@ -93,7 +108,7 @@ friday:
   dayName: Friday
   sections:
     - title: AV DONVERSITY VIRTUAL RALLY 2021
-      description: For the first time ever, the AV leadership class was able to turn one of their most highly anticipated rallies on campus into a virtual format! With the help from student groups, Amador UAV, and our wonderful hosts, Soumya Sahay and Nick Strain, we were able to create a 2021 Virtual Donversity Rally! With performances from Bollywood and Bhangra to our Black Student Union, we hope there is something for everyone to enjoy from the rally! 
+      description: For the first time ever, the AV leadership class was able to turn one of their most highly anticipated rallies on campus into a virtual format! With the help from student groups, Amador UAV, and our wonderful hosts, Soumya Sahay and Nick Strain, we were able to create a 2021 Virtual Donversity Rally! With performances from Bollywood and Bhangra to our Black Student Union, we hope there is something for everyone to enjoy from the rally!
       link: "/view/rally-video"
       highlight: true
       imageUrl: /images/rally.jpeg
