@@ -5,6 +5,8 @@ import MarkdownView from "../../components/MarkdownView/MarkdownView";
 import { getMediaPrefix } from "../../utils/funcs";
 
 export default function renderView(day: string, views: Content[]) {
+  if (!views) return undefined;
+
   const viewArr = [];
 
   for (const view of views) {
