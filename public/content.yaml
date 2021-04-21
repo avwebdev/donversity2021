@@ -31,7 +31,6 @@ tuesday:
       imageUrl: /images/teacherquotes.jpeg
       highlight: true
       content:
-      
         - type: MarkdownView
           link: quotes
 
@@ -73,11 +72,13 @@ wednesday:
       imageUrl: /images/access.jpeg
       content:
         - type: MediaView
-          link: https://donversity.amadorweb.org/images/monday.jpeg
           contentType: image
-          title: testing 1234
-          author: Subha Das
-          description: What a cool video. A 3 part series to melt your brains with joy.
+          link: /images/access.jpeg
+          title: ""
+
+        - type: LinksView
+          link: https://www.pbs.org/newshour/arts/amanda-gormans-poetic-answer-to-pandemic-grief-do-not-ignore-the-pain
+          title: Link to the Poem
 
 thursday:
   motto: Better Together through Culture & our Planet
@@ -152,9 +153,9 @@ clubs:
 
   - name: Marching Band
     id: marching-band
-    description: ""
-    video: https://doc-0c-7s-docs.googleusercontent.com/docs/securesc/ea30o06ogn9hlgmh3m72phcs4tct2fdu/stgrr6nja8qq2jcpakruone8ustcbf5u/1618421025000/06852935900433351037/01562584479799057272/1e254WzXJLJQKCj-ZRvL9JdjQKT1Qf_4U?e=download&authuser=1
+    description: The Amador Valley Marching Dons are proud to present their 2020 virtual field show, The Light of the Moon. The marching band and color guard worked together, both in person and virtually, to make their annual show as good as ever. Take a look at this abbreviated version of the performance!
     image: "marching-band.jpg"
+    video: "marching-band.mp4"
 
   - name: AV UI/UX Design Club
     id: ui-ux-club
