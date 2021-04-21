@@ -2,25 +2,25 @@
 
 <div class="row">
     <div class="col-sm" style="margin-bottom: 1.5em">
-      <img src="/images/hubbardquote.png" alt="Quote from Mrs. Hubbard" style="display: inline: block; width: 100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/donversity-2021.appspot.com/o/tuesday%2Fquotes%2Fhubbard.png?alt=media" alt="Quote from Mrs. Hubbard" style="display: inline: block; width: 100%">
     </div>
     <div class="col-sm" style="margin-bottom: 1.5em">
-      <img src="/images/marekquote.png" alt="Quote from Mr. Marek" style="display: inline: block; width: 100%">
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-sm" style="margin-bottom: 1.5em">
-      <img src="/images/weberquote.png" alt="Quote from Mr. Weber" style="display: inline: block; width: 100%">
-    </div>
-    <div class="col-sm" style="margin-bottom: 1.5em">
-      <img src="/images/andersonquote.png" alt="Quote from Mrs. Anderson" style="display: inline: block; width: 100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/donversity-2021.appspot.com/o/tuesday%2Fquotes%2Fmarek.png?alt=media" alt="Quote from Mr. Marek" style="display: inline: block; width: 100%">
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm" style="margin-bottom: 1.5em">
-      <img src="/images/scavonequote.png" alt="Quote from Mrs. Scavone" style="display: inline: block; width: 100%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/donversity-2021.appspot.com/o/tuesday%2Fquotes%2Fweber.png?alt=media" alt="Quote from Mr. Weber" style="display: inline: block; width: 100%">
+    </div>
+    <div class="col-sm" style="margin-bottom: 1.5em">
+      <img src="https://firebasestorage.googleapis.com/v0/b/donversity-2021.appspot.com/o/tuesday%2Fquotes%2Fanderson.png?alt=media" alt="Quote from Mrs. Anderson" style="display: inline: block; width: 100%">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm" style="margin-bottom: 1.5em">
+      <img src="https://firebasestorage.googleapis.com/v0/b/donversity-2021.appspot.com/o/tuesday%2Fquotes%2Fscavone.png?alt=media" alt="Quote from Mrs. Scavone" style="display: inline: block; width: 100%">
     </div>
     <div class="col-sm" style="margin-bottom: 1.5em"></div>
 </div>
