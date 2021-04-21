@@ -39,7 +39,7 @@ export function LoaderPage({ fadingOut }: any) {
         </div>
       </div>
       <div id={styles.loadingMessage}>
-        Did you know: Amador Valley graduated its first class in 1923?
+        Did you know: The Amador Valley campus was originally built in a Mediterranean Revival style?
       </div>
     </Fragment>
   );

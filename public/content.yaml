@@ -31,7 +31,7 @@ tuesday:
       imageUrl: /images/teacherquotes.jpeg
       highlight: true
       content:
-      
+
         - type: MarkdownView
           link: quotes
 
@@ -73,11 +73,13 @@ wednesday:
       imageUrl: /images/access.jpeg
       content:
         - type: MediaView
-          link: https://donversity.amadorweb.org/images/monday.jpeg
           contentType: image
-          title: testing 1234
-          author: Subha Das
-          description: What a cool video. A 3 part series to melt your brains with joy.
+          link: /images/access.jpeg
+          title: ""
+
+        - type: LinksView
+          link: https://www.pbs.org/newshour/arts/amanda-gormans-poetic-answer-to-pandemic-grief-do-not-ignore-the-pain
+          title: Link to the Poem
 
 thursday:
   motto: Better Together through Culture & our Planet
