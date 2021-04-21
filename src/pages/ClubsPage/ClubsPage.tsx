@@ -4,6 +4,8 @@ import { DataContext } from "../../misc/DataContext";
 import { ContentSections, Club } from "../../types";
 import { Link } from "react-router-dom";
 import { analytics } from "../../Store";
+import { getClubMedia } from "../../utils/funcs";
+import { Helmet } from "react-helmet";
 
 function ClubDiv(club: Club) {
   const [hovering, setHovering] = useState(false);
@@ -24,7 +26,7 @@ function ClubDiv(club: Club) {
           </h4>
         </div>
         <img
-          src={`/clubs/${club.image}`}
+          src={getClubMedia(club.image)}
           alt={club.name}
           className={styles.clubImage}
         />
@@ -43,6 +45,9 @@ export default function ClubsPage() {
 
   return (
     <>
+      <Helmet>
+        <title>Club Fair | Donversity</title>
+      </Helmet>
       <div id={styles.top}>
         <h1 className={styles.heading}>Club Fair!</h1>
         <h5 id={styles.description}>

@@ -7,6 +7,8 @@ import { DataContext } from "../../misc/DataContext";
 import { currentDay, currentDayIndex, days } from "../../misc/DayInfo";
 import { ContentPage, ContentSection, ContentSections } from "../../types";
 import { analytics } from "../../Store";
+import { getMediaPrefix } from "../../utils/funcs";
+import { Helmet } from "react-helmet";
 
 export default function HomePage() {
   analytics?.logEvent("page_view", {
@@ -33,7 +35,12 @@ export default function HomePage() {
   }
 
   const highlightElements = highlights.map((highlight) => (
-    <Event highlight={true} page={highlight} key={highlight.link}></Event>
+    <Event
+      day={currentDay}
+      highlight={true}
+      page={highlight}
+      key={highlight.link}
+    ></Event>
   ));
 
   let otherElements: JSX.Element[] = [];
@@ -43,7 +50,12 @@ export default function HomePage() {
 
     otherElements = otherElements.concat(
       otherSections.map((page) => (
-        <Event highlight={false} page={page} key={page.link}></Event>
+        <Event
+          day={currentDay}
+          highlight={false}
+          page={page}
+          key={page.link}
+        ></Event>
       ))
     );
   }
@@ -57,7 +69,12 @@ export default function HomePage() {
 
       otherElements = otherElements.concat(
         dayData.sections.map((page) => (
-          <Event highlight={false} page={page} key={page.link}></Event>
+          <Event
+            day={days[i]}
+            highlight={false}
+            page={page}
+            key={page.link}
+          ></Event>
         ))
       );
 
@@ -74,7 +91,12 @@ export default function HomePage() {
 
         otherElements = otherElements.concat(
           dayData.sections.map((page) => (
-            <Event highlight={false} page={page} key={page.link}></Event>
+            <Event
+              day={days[i]}
+              highlight={false}
+              page={page}
+              key={page.link}
+            ></Event>
           ))
         );
 
@@ -86,10 +108,18 @@ export default function HomePage() {
 
   return (
     <Fragment>
+      <Helmet>
+        <title>Donversity 2021</title>
+      </Helmet>
       <div id={styles.container}>
         <div
           id={styles.dayBanner}
-          style={{ backgroundImage: `url("${data[currentDay].imageUrl}")` }}
+          style={{
+            backgroundImage: `url("${getMediaPrefix(
+              currentDay,
+              "main.jpeg"
+            )}")`,
+          }}
         >
           <h3>{data[currentDay].dayName}</h3>
           <h2>{data[currentDay].motto}</h2>

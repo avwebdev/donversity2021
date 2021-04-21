@@ -40,5 +40,4 @@ export interface ContentSection {
   motto?: string;
   dayName?: string;
   sections: ContentPage[];
-  imageUrl: string;
 }

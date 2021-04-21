@@ -1,11 +1,10 @@
 monday:
   motto: Better Together through Art & Music
   dayName: Monday
-  imageUrl: /images/monday.jpeg
   sections:
     - title: Student Art Gallery!
       description: We have so many artistically gifted students on campus! Check out our Virtual Art Gallery to see what these AV students have created!
-      imageUrl: /images/artgallery.png
+      imageUrl: artgallery.png
       highlight: true
       link: /view/art-gallery
       content:
@@ -17,21 +16,19 @@ monday:
       description: Post a picture on your insta story of music that represents you, music you are currently listening to, or music that just makes you happy! We will compile all of the songs together into a playlist for you to listen to!
       link: /view/songs
       highlight: true
-      imageUrl: /images/avsongs.jpg
+      imageUrl: songs.jpg
       content:
 
 tuesday:
   motto: Better Together but still UnDONe
   dayName: Tuesday
-  imageUrl: /images/tuesday.jpeg
   sections:
     - title: See What AV Staff Had To Say About Donversity!
       link: /view/av-staff
       description: We have such an amazing staff here at AV, and we asked for them to tell us what Donversity means to them! Check out what they had to say.
-      imageUrl: /images/teacherquotes.jpeg
+      imageUrl: teacher-quotes.jpeg
       highlight: true
       content:
-
         - type: MarkdownView
           link: quotes
 
@@ -43,11 +40,11 @@ tuesday:
       description: We have created an anonymous Padlet for you to share what Donversity Means to you. The link for this Padlet will be up all week, and we would love to see what AV students have to say!
       link: /view/what-does-donversity-mean-to-you
       highlight: true
-      imageUrl: /images/padlet.png
+      imageUrl: padlet.png
       content:
         - type: MediaView
           contentType: image
-          link: /images/padlet.png
+          link: padlet.png
           title: ""
 
         - type: LinksView
@@ -57,12 +54,11 @@ tuesday:
 wednesday:
   motto: Better Together through our Interests
   dayName: Wednesday
-  imageUrl: /images/wed.jpeg
   sections:
     - title: AV Virtual Club Fair!
       description: Hey Dons! Our Amador clubs have been working extremely hard to produce a club fair for this year! Click here to visit the site!
       link: "/club-fair"
-      imageUrl: /images/clubfair.jpeg
+      imageUrl: club-fair.jpeg
       highlight: true
       content:
 
@@ -70,11 +66,11 @@ wednesday:
       description: Hey Dons! We hope you all enjoyed the discussion you had in your ACCESS classes today! We have attached the link to Amanda Gorman’s Poem if you wish to relisten to it!
       link: "/view/access"
       highlight: true
-      imageUrl: /images/access.jpeg
+      imageUrl: access.jpeg
       content:
         - type: MediaView
           contentType: image
-          link: /images/access.jpeg
+          link: access.jpeg
           title: ""
 
         - type: LinksView
@@ -83,40 +79,38 @@ wednesday:
 
 thursday:
   motto: Better Together through Culture & our Planet
-  imageUrl: /images/thursday.jpeg
   dayName: Thursday
   sections:
     - title: Cooking With Butter Videos
       description: Hey Dons! We were super fortunate to work with Mr. Butterfield on Donversity this year, and we have created a segment called “Cooking With Butter!” Two of our amazing clubs on campus, The Korean Culture Club and the Black Student Union, teamed up to teach Mr. Butterfield how to make dishes that are special to their Cultures in our very own culinary classrooms! ! Check out the videos and the recipes.
       link: "/view/cooking-with-butter"
-      imageUrl: /images/butter.jpeg
+      imageUrl: butter.jpeg
       highlight: true
       content:
 
     - title: Where are our AV Students From?
       description: The Amador community is so diverse; filled with different nationalities, ethnicities, and cultures that we are privileged to attend school with. To visually promote our diverse community, we have attached a link to a virtual map and a google form where you may submit virtual pins that show where you are from!
       link: "/view/virtual-map"
-      imageUrl: /images/virtualmap.jpeg
+      imageUrl: virtual-map.jpeg
       highlight: true
       content:
 
 friday:
   motto: Better Together as Dons
-  imageUrl: /images/friday.jpeg
   dayName: Friday
   sections:
     - title: AV DONVERSITY VIRTUAL RALLY 2021
       description: For the first time ever, the AV leadership class was able to turn one of their most highly anticipated rallies on campus into a virtual format! With the help from student groups, Amador UAV, and our wonderful hosts, Soumya Sahay and Nick Strain, we were able to create a 2021 Virtual Donversity Rally! With performances from Bollywood and Bhangra to our Black Student Union, we hope there is something for everyone to enjoy from the rally!
       link: "/view/rally-video"
       highlight: true
-      imageUrl: /images/rally.jpeg
+      imageUrl: rally.jpeg
       content:
 
     - title: Don Deckout!
       highlight: true
       description: For our last day, we are recognizing how we are better together as Dons! Although we are all unique in our own ways, we all share being a Don! So, post a pic decked out in your AV gear and tag @avhsdons to be featured on their instagram!
       link: "/view/deckout"
-      imageUrl: /images/deckout.jpeg
+      imageUrl: deckout.jpeg
       content:
 
 clubs:
@@ -154,9 +148,9 @@ clubs:
 
   - name: Marching Band
     id: marching-band
-    description: ""
-    video: https://doc-0c-7s-docs.googleusercontent.com/docs/securesc/ea30o06ogn9hlgmh3m72phcs4tct2fdu/stgrr6nja8qq2jcpakruone8ustcbf5u/1618421025000/06852935900433351037/01562584479799057272/1e254WzXJLJQKCj-ZRvL9JdjQKT1Qf_4U?e=download&authuser=1
+    description: The Amador Valley Marching Dons are proud to present their 2020 virtual field show, The Light of the Moon. The marching band and color guard worked together, both in person and virtually, to make their annual show as good as ever. Take a look at this abbreviated version of the performance!
     image: "marching-band.jpg"
+    video: "marching-band.mp4"
 
   - name: AV UI/UX Design Club
     id: ui-ux-club
@@ -194,6 +188,7 @@ clubs:
       in the Bay Area! If you are interested in science and willing to put in the hard
       work (and maybe win some prizes!), sign up for next year's season (21-22) on our website: https://avscioly.weebly.com/."
     image: "science-team.jpg"
+    video: "science-team.mp4"
 
   - name: Neuroscience Club
     id: neuroscience-club

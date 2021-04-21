@@ -13,6 +13,7 @@ import Navbar from "./components/Navbar/Navbar";
 import ClubsPage from "./pages/ClubsPage/ClubsPage";
 import ClubPage from "./pages/ClubPage/ClubPage";
 import Footer from "./components/Footer/Footer";
+import { Helmet } from "react-helmet";
 
 library.add(fas);
 
@@ -34,6 +35,9 @@ function App() {
 
     return (
       <Fragment>
+        <Helmet>
+          <title>Donversity 2021</title>
+        </Helmet>
         <LoaderPage></LoaderPage>
         <Overlay
           fadingOut={fadingOut}

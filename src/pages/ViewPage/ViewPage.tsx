@@ -7,6 +7,7 @@ import RenderView from "./RenderView";
 import styles from "./ViewPage.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { analytics } from "../../Store";
+import { Helmet } from "react-helmet";
 
 export default function ViewPage() {
   const data = useContext(DataContext) as ContentSections;
@@ -14,7 +15,7 @@ export default function ViewPage() {
 
   const { currentPage, day } = getCurrentPage(pathname, data);
 
-  if (!currentPage) {
+  if (!currentPage || !day) {
     return <Redirect to="/"></Redirect>;
   }
 
@@ -23,14 +24,16 @@ export default function ViewPage() {
     page_path: pathname,
   });
 
-  const future = isFuture(day as string);
-  const formattedDay = ((day?.substring(0, 1).toUpperCase() as string) +
-    day?.substring(1)) as string;
+  const future = isFuture(day);
+  const formattedDay = day.substring(0, 1).toUpperCase() + day.substring(1);
 
-  const viewArr = RenderView(currentPage?.content);
+  const viewArr = RenderView(day, currentPage.content);
 
   return (
     <Fragment>
+      <Helmet>
+        <title>{currentPage.title} | Donversity</title>
+      </Helmet>
       <div id={styles.container}>
         <h3>{currentPage.title}</h3>
         <h5>{currentPage.description}</h5>

@@ -2,16 +2,19 @@ import { Content } from "../../types";
 import MediaView from "../../components/MediaView/MediaView";
 import LinksView from "../../components/LinksView/LinksView";
 import MarkdownView from "../../components/MarkdownView/MarkdownView";
+import { getMediaPrefix } from "../../utils/funcs";
 
-export default function renderView(views: Content[] | undefined) {
+export default function renderView(day: string, views: Content[]) {
   if (!views) return undefined;
+
   const viewArr = [];
+
   for (const view of views) {
     switch (view.type) {
       case "MediaView":
         viewArr.push(
           <MediaView
-            url={view.link}
+            url={getMediaPrefix(day, view.link)}
             description={view.description}
             author={view.author}
             type={view.contentType}
