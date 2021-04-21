@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { analytics } from "../../Store";
 import "./AboutPage.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function AboutPage(props: any) {
   analytics?.logEvent("page_view", {
@@ -202,6 +203,18 @@ export default function AboutPage(props: any) {
           </div>
         </div>
       </div>
+      <a
+        href="https://github.com/avwebdev/donversity2021"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="my-2 mx-auto"
+      >
+        View the Source Code
+        <FontAwesomeIcon
+          className="link-icon"
+          icon={["fas", "external-link-alt"]}
+        />
+      </a>
     </>
   );
 }
