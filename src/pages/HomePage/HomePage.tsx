@@ -7,7 +7,7 @@ import { DataContext } from "../../misc/DataContext";
 import { currentDay, currentDayIndex, days } from "../../misc/DayInfo";
 import { ContentPage, ContentSection, ContentSections } from "../../types";
 import { analytics } from "../../Store";
-import { getMediaPrefix } from "../../utils/funcs";
+import { getDayMedia } from "../../utils/funcs";
 import { Helmet } from "react-helmet";
 
 export default function HomePage() {
@@ -115,7 +115,7 @@ export default function HomePage() {
         <div
           id={styles.dayBanner}
           style={{
-            backgroundImage: `url("${getMediaPrefix(currentDay + ".jpeg")}")`,
+            backgroundImage: `url("${getDayMedia(currentDay)}")`,
           }}
         >
           <h3>{data[currentDay].dayName}</h3>
