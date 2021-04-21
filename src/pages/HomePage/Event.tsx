@@ -2,13 +2,15 @@ import { ContentPage } from "../../types";
 import styles from "./HomePage.module.css";
 import { Link, useHistory } from "react-router-dom";
 import { useCallback } from "react";
+import { getMediaPrefix } from "../../utils/funcs";
 
 interface EventProps {
+  day: string;
   page: ContentPage;
   highlight: boolean;
 }
 
-export default function Event({ page, highlight }: EventProps) {
+export default function Event({ day, page, highlight }: EventProps) {
   const history = useHistory();
 
   const handleOnClick = useCallback(() => {
@@ -23,7 +25,10 @@ export default function Event({ page, highlight }: EventProps) {
       >
         <span>
           <span className={styles.imageContainer}>
-            <img src={page.imageUrl} alt={`Page ${page.title}`} />
+            <img
+              src={getMediaPrefix(day, page.imageUrl)}
+              alt={`Page ${page.title}`}
+            />
           </span>
           <h4>
             <Link to={page.link}>{page.title}</Link>
@@ -38,7 +43,10 @@ export default function Event({ page, highlight }: EventProps) {
         className={highlight ? styles.highlight : styles.event}
         onClick={handleOnClick}
       >
-        <img src={page.imageUrl} alt={`Page ${page.title}`} />
+        <img
+          src={getMediaPrefix(day, page.imageUrl)}
+          alt={`Page ${page.title}`}
+        />
         <span>
           <h4>
             <Link to={page.link}>{page.title}</Link>

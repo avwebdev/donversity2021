@@ -34,7 +34,12 @@ export default function HomePage() {
   }
 
   const highlightElements = highlights.map((highlight) => (
-    <Event highlight={true} page={highlight} key={highlight.link}></Event>
+    <Event
+      day={currentDay}
+      highlight={true}
+      page={highlight}
+      key={highlight.link}
+    ></Event>
   ));
 
   let otherElements: JSX.Element[] = [];
@@ -44,7 +49,12 @@ export default function HomePage() {
 
     otherElements = otherElements.concat(
       otherSections.map((page) => (
-        <Event highlight={false} page={page} key={page.link}></Event>
+        <Event
+          day={currentDay}
+          highlight={false}
+          page={page}
+          key={page.link}
+        ></Event>
       ))
     );
   }
@@ -58,7 +68,12 @@ export default function HomePage() {
 
       otherElements = otherElements.concat(
         dayData.sections.map((page) => (
-          <Event highlight={false} page={page} key={page.link}></Event>
+          <Event
+            day={days[i]}
+            highlight={false}
+            page={page}
+            key={page.link}
+          ></Event>
         ))
       );
 
@@ -75,7 +90,12 @@ export default function HomePage() {
 
         otherElements = otherElements.concat(
           dayData.sections.map((page) => (
-            <Event highlight={false} page={page} key={page.link}></Event>
+            <Event
+              day={days[i]}
+              highlight={false}
+              page={page}
+              key={page.link}
+            ></Event>
           ))
         );
 
