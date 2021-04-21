@@ -10,7 +10,7 @@ import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import { Link } from "react-router-dom";
 import { analytics } from "../../Store";
 import { Helmet } from "react-helmet";
-import { getMediaPrefix } from "../../utils/funcs";
+import { getClubMedia } from "../../utils/funcs";
 
 interface Params {
   club: string;
@@ -39,7 +39,7 @@ export default function ClubPage() {
         <div className={styles.clubMedia}>
           <img
             className={styles.mainImage}
-            src={getMediaPrefix(clubInfo.image)}
+            src={getClubMedia(clubInfo.image)}
             alt={clubInfo.name}
           />
           {clubInfo.video && (
@@ -66,7 +66,7 @@ export default function ClubPage() {
                     <h4>{c.name}</h4>
                   </div>
                   <img
-                    src={getMediaPrefix(c.image)}
+                    src={getClubMedia(c.image)}
                     alt={c.name}
                     className={styles.clubImage}
                   />

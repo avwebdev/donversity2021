@@ -4,7 +4,7 @@ import { DataContext } from "../../misc/DataContext";
 import { ContentSections, Club } from "../../types";
 import { Link } from "react-router-dom";
 import { analytics } from "../../Store";
-import { getMediaPrefix } from "../../utils/funcs";
+import { getClubMedia } from "../../utils/funcs";
 import { Helmet } from "react-helmet";
 
 function ClubDiv(club: Club) {
@@ -26,7 +26,7 @@ function ClubDiv(club: Club) {
           </h4>
         </div>
         <img
-          src={getMediaPrefix(club.image)}
+          src={getClubMedia(club.image)}
           alt={club.name}
           className={styles.clubImage}
         />
