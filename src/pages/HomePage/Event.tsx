@@ -26,7 +26,7 @@ export default function Event({ day, page, highlight }: EventProps) {
         <span>
           <span className={styles.imageContainer}>
             <img
-              src={getMediaPrefix(day, page.imageUrl)}
+              src={getMediaPrefix(page.imageUrl)}
               alt={`Page ${page.title}`}
             />
           </span>
@@ -43,10 +43,7 @@ export default function Event({ day, page, highlight }: EventProps) {
         className={highlight ? styles.highlight : styles.event}
         onClick={handleOnClick}
       >
-        <img
-          src={getMediaPrefix(day, page.imageUrl)}
-          alt={`Page ${page.title}`}
-        />
+        <img src={getMediaPrefix(page.imageUrl)} alt={`Page ${page.title}`} />
         <span>
           <h4>
             <Link to={page.link}>{page.title}</Link>

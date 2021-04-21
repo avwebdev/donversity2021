@@ -14,7 +14,7 @@ export default function renderView(day: string, views: Content[]) {
       case "MediaView":
         viewArr.push(
           <MediaView
-            url={getMediaPrefix(day, view.link)}
+            url={getMediaPrefix(view.link)}
             description={view.description}
             author={view.author}
             type={view.contentType}

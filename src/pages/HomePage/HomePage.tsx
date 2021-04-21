@@ -115,10 +115,7 @@ export default function HomePage() {
         <div
           id={styles.dayBanner}
           style={{
-            backgroundImage: `url("${getMediaPrefix(
-              currentDay,
-              "main.jpeg"
-            )}")`,
+            backgroundImage: `url("${getMediaPrefix(currentDay + ".jpeg")}")`,
           }}
         >
           <h3>{data[currentDay].dayName}</h3>

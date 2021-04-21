@@ -150,7 +150,7 @@ clubs:
     id: marching-band
     description: The Amador Valley Marching Dons are proud to present their 2020 virtual field show, The Light of the Moon. The marching band and color guard worked together, both in person and virtually, to make their annual show as good as ever. Take a look at this abbreviated version of the performance!
     image: "marching-band.jpg"
-    video: "marching-band.mp4"
+    video: "https://youtube.com/embed/5jFqbpGGGBE"
 
   - name: AV UI/UX Design Club
     id: ui-ux-club
@@ -173,7 +173,7 @@ clubs:
       community. If you have any questions, email us at avhskah@gmail.com or dm us on
       Instagram @avhskah, and join our Remind by texting @avkah2021 to 81010!
     image: "kids-against-hunger.jpg"
-    video: "kids-against-hunger.mp4"
+    video: "https://youtube.com/embed/7wI2YU6_t6M"
 
   - name: AV Science Team
     id: science-team
@@ -188,7 +188,7 @@ clubs:
       in the Bay Area! If you are interested in science and willing to put in the hard
       work (and maybe win some prizes!), sign up for next year's season (21-22) on our website: https://avscioly.weebly.com/."
     image: "science-team.jpg"
-    video: "science-team.mp4"
+    video: "https://youtube.com/embed/weuAc-hvLWU"
 
   - name: Neuroscience Club
     id: neuroscience-club
@@ -201,7 +201,7 @@ clubs:
 
       Anyone with a curiosity about the brain and hoping to find ways to help yourself, your friends, your loved ones, or your community is welcome to join us!
     image: "neuroscience-club.jpeg"
-    video: "neuroscience-club.mp4"
+    video: "https://youtube.com/embed/wa2enGTGioA"
 
   - name: Girls Who Start
     id: girls-who-start
