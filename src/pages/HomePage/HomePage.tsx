@@ -7,6 +7,7 @@ import { DataContext } from "../../misc/DataContext";
 import { currentDay, currentDayIndex, days } from "../../misc/DayInfo";
 import { ContentPage, ContentSection, ContentSections } from "../../types";
 import { analytics } from "../../Store";
+import { getMediaPrefix } from "../../utils/funcs";
 
 export default function HomePage() {
   analytics?.logEvent("page_view", {
@@ -89,7 +90,12 @@ export default function HomePage() {
       <div id={styles.container}>
         <div
           id={styles.dayBanner}
-          style={{ backgroundImage: `url("${data[currentDay].imageUrl}")` }}
+          style={{
+            backgroundImage: `url("${getMediaPrefix(
+              currentDay,
+              "main.jpeg"
+            )}")`,
+          }}
         >
           <h3>{data[currentDay].dayName}</h3>
           <h2>{data[currentDay].motto}</h2>

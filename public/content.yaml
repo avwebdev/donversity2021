@@ -1,7 +1,6 @@
 monday:
   motto: Better Together through Art & Music
   dayName: Monday
-  imageUrl: /images/monday.jpeg
   sections:
     - title: Student Art Gallery!
       description: We have so many artistically gifted students on campus! Check out our Virtual Art Gallery to see what these AV students have created!
@@ -23,7 +22,6 @@ monday:
 tuesday:
   motto: Better Together but still UnDONe
   dayName: Tuesday
-  imageUrl: /images/tuesday.jpeg
   sections:
     - title: See What AV Staff Had To Say About Donversity!
       link: /view/av-staff
@@ -56,7 +54,6 @@ tuesday:
 wednesday:
   motto: Better Together through our Interests
   dayName: Wednesday
-  imageUrl: /images/wed.jpeg
   sections:
     - title: AV Virtual Club Fair!
       description: Hey Dons! Our Amador clubs have been working extremely hard to produce a club fair for this year! Click here to visit the site!

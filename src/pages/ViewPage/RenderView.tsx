@@ -3,9 +3,9 @@ import MediaView from "../../components/MediaView/MediaView";
 import LinksView from "../../components/LinksView/LinksView";
 import MarkdownView from "../../components/MarkdownView/MarkdownView";
 
-export default function renderView(views: Content[] | undefined) {
-  if (!views) return undefined;
+export default function renderView(day: string, views: Content[]) {
   const viewArr = [];
+
   for (const view of views) {
     switch (view.type) {
       case "MediaView":
