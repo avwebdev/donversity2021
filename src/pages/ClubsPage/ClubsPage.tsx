@@ -3,6 +3,7 @@ import styles from "./ClubsPage.module.css";
 import { DataContext } from "../../misc/DataContext";
 import { ContentSections, Club } from "../../types";
 import { Link } from "react-router-dom";
+import { analytics } from "../../Store";
 
 function ClubDiv(club: Club) {
   const [hovering, setHovering] = useState(false);
@@ -33,6 +34,11 @@ function ClubDiv(club: Club) {
 }
 
 export default function ClubsPage() {
+  analytics?.logEvent("page_view", {
+    page_title: "Club Fair",
+    page_location: "/club-fair",
+  });
+
   const data = useContext(DataContext) as ContentSections;
 
   return (

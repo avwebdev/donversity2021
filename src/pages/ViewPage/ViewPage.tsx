@@ -5,20 +5,27 @@ import { isFuture } from "../../misc/DayInfo";
 import { ContentPage, ContentSection, ContentSections } from "../../types";
 import RenderView from "./RenderView";
 import styles from "./ViewPage.module.css";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { analytics } from "../../Store";
 
 export default function ViewPage() {
-  const data = useContext(DataContext) as ContentSections;;
+  const data = useContext(DataContext) as ContentSections;
   const pathname = useLocation().pathname;
 
-  const {currentPage, day} = getCurrentPage(pathname, data);
+  const { currentPage, day } = getCurrentPage(pathname, data);
 
   if (!currentPage) {
     return <Redirect to="/"></Redirect>;
   }
 
+  analytics?.logEvent("page_view", {
+    page_title: currentPage.title,
+    page_path: pathname,
+  });
+
   const future = isFuture(day as string);
-  const formattedDay = day?.substring(0, 1).toUpperCase() as string + day?.substring(1) as string;
+  const formattedDay = ((day?.substring(0, 1).toUpperCase() as string) +
+    day?.substring(1)) as string;
 
   const viewArr = RenderView(currentPage?.content);
 
@@ -28,16 +35,20 @@ export default function ViewPage() {
         <h3>{currentPage.title}</h3>
         <h5>{currentPage.description}</h5>
         <h6>{currentPage.author ? `By ${currentPage.author}` : ""}</h6>
-        {!future ? viewArr : <p id={styles.comingSoon}>
-          This activity will be available on {formattedDay}. See you then!
-          <FontAwesomeIcon icon={["fas", "calendar"]} style={calendarStyles}></FontAwesomeIcon>
-        </p>}
-
+        {!future ? (
+          viewArr
+        ) : (
+          <p id={styles.comingSoon}>
+            This activity will be available on {formattedDay}. See you then!
+            <FontAwesomeIcon
+              icon={["fas", "calendar"]}
+              style={calendarStyles}
+            ></FontAwesomeIcon>
+          </p>
+        )}
 
         <h4 id={styles.toHome}>
-          <Link to="/home">
-            Back to home page.
-          </Link>
+          <Link to="/home">Back to home page.</Link>
         </h4>
       </div>
     </Fragment>
@@ -61,10 +72,10 @@ function getCurrentPage(pathname: string, sections: ContentSections) {
     }
   }
 
-  return {currentPage, day: currentDay};
+  return { currentPage, day: currentDay };
 }
 
 const calendarStyles = {
   marginLeft: "10px",
-  color: "purple"
-}
+  color: "purple",
+};
