@@ -4,7 +4,7 @@ import { DataContext } from "../../misc/DataContext";
 import { ContentSections, Club } from "../../types";
 import { Link } from "react-router-dom";
 import { analytics } from "../../Store";
-import { getMedia } from "../../utils/funcs";
+import { getClubMedia } from "../../utils/funcs";
 
 function ClubDiv(club: Club) {
   const [hovering, setHovering] = useState(false);
@@ -25,7 +25,7 @@ function ClubDiv(club: Club) {
           </h4>
         </div>
         <img
-          src={getMedia(club.image)}
+          src={getClubMedia(club.image)}
           alt={club.name}
           className={styles.clubImage}
         />

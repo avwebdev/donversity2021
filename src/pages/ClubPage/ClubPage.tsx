@@ -9,7 +9,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import { Link } from "react-router-dom";
 import { analytics } from "../../Store";
-import { getMedia } from "../../utils/funcs";
+import { getClubMedia } from "../../utils/funcs";
 
 interface Params {
   club: string;
@@ -34,14 +34,14 @@ export default function ClubPage() {
       <div className={styles.clubMedia}>
         <img
           className={styles.mainImage}
-          src={getMedia(clubInfo.image)}
+          src={getClubMedia(clubInfo.image)}
           alt={clubInfo.name}
         />
         {clubInfo.video && (
           <MediaView
             className={styles.clubVideo}
             type="video"
-            url={getMedia(clubInfo.video)}
+            url={getClubMedia(clubInfo.video)}
           />
         )}
       </div>
@@ -61,7 +61,7 @@ export default function ClubPage() {
                   <h4>{c.name}</h4>
                 </div>
                 <img
-                  src={getMedia(c.image)}
+                  src={getClubMedia(c.image)}
                   alt={c.name}
                   className={styles.clubImage}
                 />
