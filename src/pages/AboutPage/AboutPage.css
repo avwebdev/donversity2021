@@ -1,9 +1,9 @@
-
-div, footer{
+div,
+footer {
   margin: 0;
   padding: 0;
 }
-.about{
+.about {
   width: 100%;
   height: 100vh;
   background-image: url("https://core4.bmctoday.net/storage/images/diversity_1597416421.jpg?v=85eb67a");
@@ -12,9 +12,9 @@ div, footer{
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 25vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-.circle{
+.circle {
   display: block;
   width: 50vh;
   height: 50vh;
@@ -24,30 +24,31 @@ div, footer{
   padding-top: 10vh;
   text-align: center;
 }
-.circle img{
+.circle img {
   width: 10vh;
   height: 10vh;
 }
-.about .circle h3{
+.about .circle h3 {
   font-size: 100%;
   color: white;
 }
-.imgarrow:hover{
+.imgarrow:hover {
   width: 11vh;
   height: 11vh;
 }
-.ok{
+.ok {
   height: 100vh;
-  background-color:#8c7ae6;
+  background-color: #8c7ae6;
   color: white;
-  font-size:36px;
-  display:grid;
+  font-size: 36px;
+  display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.rooted{
-  background-color:#8c7ae6;
+.rooted {
+  background-color: #8c7ae6;
 }
-.what, .who{
+.what,
+.who {
   width: 80%;
   margin: auto;
   height: 70%;
@@ -58,15 +59,16 @@ div, footer{
   padding: 5%;
   line-height: 10vh;
 }
-.who{
+.who {
   line-height: 7vh;
 }
-@media(max-width: 1100px){
-  .ok{
+@media (max-width: 1100px) {
+  .ok {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  .what, .who{
+  .what,
+  .who {
     width: 90%;
     height: 90%;
     color: black;
@@ -75,60 +77,59 @@ div, footer{
     font-weight: lighter;
     line-height: 5vh;
   }
-  .who{
+  .who {
     line-height: 4vh;
   }
 }
-.what{
+.what {
   background-color: white;
   color: #8c7ae6;
   transition: 1s;
   margin-left: 13%;
 }
-.what:hover{
+.what:hover {
   opacity: 0.7;
 }
-.who{
+.who {
   border: 1px solid white;
   color: white;
   transition: 1s;
   margin-right: 13%;
 }
-.who:hover{
+.who:hover {
   background-color: #9c88ff;
   color: white;
 }
-.p{
+.p {
   width: 90%;
   height: 90%;
   margin: auto;
   font-size: 50%;
   border: 0.5px solid grey;
 }
-.p img{
+.p img {
   width: 100%;
   height: 100%;
 }
-.p img{
+.p img {
   opacity: 0.7;
 }
-.rooted{
-  height: 600vh;
+.rooted {
   width: 100%;
 }
-.team{
+.team {
   background-color: white;
 }
 
-
-.p h3, .p h6{
+.p h3,
+.p h6 {
   color: white;
   text-shadow: 1px 1px 2px black;
   padding-top: 5vh;
   text-align: center;
 }
 
-.meetTheTeam{
+.meetTheTeam {
   background-color: white;
   color: #9c88ff;
   width: 100%;
@@ -137,26 +138,26 @@ div, footer{
   text-align: center;
 }
 
-@media(max-width: 700px){
-  .rooted{
+@media (max-width: 700px) {
+  .rooted {
     width: 100%;
   }
-  .p{
+  .p {
     background-color: white;
     height: 50vh;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
-  .what, .who{
+  .what,
+  .who {
     margin-left: 0;
     margin-right: 0;
     margin: auto;
   }
 }
 
-
-.people{
+.people {
   padding: 16px;
   border: 1px solid #9c88ff;
   background: #9c88ff;
@@ -169,14 +170,14 @@ div, footer{
   border-radius: 5px;
   box-shadow: 5px 5px 5px 5px rgb(236, 233, 233);
 }
-.people:hover{
+.people:hover {
   background-color: white;
   color: #9c88ff;
 }
-.people h3{
+.people h3 {
   padding-top: 16px;
 }
-.people h6{
+.people h6 {
   display: block;
   border-radius: 5px;
   background-color: #f1c40f;
@@ -186,15 +187,26 @@ div, footer{
   left: 10%;
   width: 80%;
 }
-.team{
+.team {
   padding: 20px;
 }
 
-@keyframes color-change {
-  0% { color: #9c88ff; }
-  50% { color:#bbb2e9; }
-  100% { color: #9c88ff; }
+.link-icon {
+  margin-left: 5px;
 }
-body, div{
- scroll-behavior: smooth;
+
+@keyframes color-change {
+  0% {
+    color: #9c88ff;
+  }
+  50% {
+    color: #bbb2e9;
+  }
+  100% {
+    color: #9c88ff;
+  }
+}
+body,
+div {
+  scroll-behavior: smooth;
 }
