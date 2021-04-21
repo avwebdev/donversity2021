@@ -7,6 +7,7 @@ import RenderView from "./RenderView";
 import styles from "./ViewPage.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { analytics } from "../../Store";
+import { Helmet } from "react-helmet";
 
 export default function ViewPage() {
   const data = useContext(DataContext) as ContentSections;
@@ -30,6 +31,9 @@ export default function ViewPage() {
 
   return (
     <Fragment>
+      <Helmet>
+        <title>{currentPage.title} | Donversity</title>
+      </Helmet>
       <div id={styles.container}>
         <h3>{currentPage.title}</h3>
         <h5>{currentPage.description}</h5>

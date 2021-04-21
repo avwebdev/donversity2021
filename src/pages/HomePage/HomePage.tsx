@@ -8,6 +8,7 @@ import { currentDay, currentDayIndex, days } from "../../misc/DayInfo";
 import { ContentPage, ContentSection, ContentSections } from "../../types";
 import { analytics } from "../../Store";
 import { getMediaPrefix } from "../../utils/funcs";
+import { Helmet } from "react-helmet";
 
 export default function HomePage() {
   analytics?.logEvent("page_view", {
@@ -107,6 +108,9 @@ export default function HomePage() {
 
   return (
     <Fragment>
+      <Helmet>
+        <title>Donversity 2021</title>
+      </Helmet>
       <div id={styles.container}>
         <div
           id={styles.dayBanner}
