@@ -1,3 +1,4 @@
+import { getMediaPrefix } from "../../utils/funcs";
 import styles from "./MediaView.module.css";
 
 export default function MediaView({ description, url, type, className }: any) {
@@ -21,7 +22,7 @@ export default function MediaView({ description, url, type, className }: any) {
     case "video": {
       return (
         <video controls className={className}>
-          <source src={url} />
+          <source src={getMediaPrefix(url)} />
         </video>
       );
     }
@@ -30,7 +31,7 @@ export default function MediaView({ description, url, type, className }: any) {
       return (
         <section id={styles.container}>
           <div>
-            <img src={url} alt={description} />
+            <img src={getMediaPrefix(url)} alt={description} />
           </div>
           <p>{description}</p>
         </section>

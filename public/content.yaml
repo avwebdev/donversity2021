@@ -90,13 +90,33 @@ thursday:
       highlight: true
       content:
 
+        - type: MediaView
+          link: https://www.youtube.com/embed/KGcKV7Da04w
+          contentType: yt-video
+          description: Recipes from the Korean Culture Club
+
+        - type: LinksView
+          link: https://docs.google.com/document/d/1_Hbe3JVpf607q3KHNbbN2T6FGmU_AaD7m13pZItHtXw/edit?usp=sharing
+          title: 떡볶이 Recipe
+
+        - type: LinksView
+          link: https://docs.google.com/document/d/1PzSvSbEk8rV3bVLccxKpXvGQnMqCAQr06PWrnrjwp3Q/edit?usp=sharing
+          title: 김치볶음밥 Recipe
+
+        - type: MediaView
+          link: https://www.youtube.com/embed/qgrvDB1gjB0
+          contentType: yt-video
+          description: Recipes from the Black Student Union
+
         - type: LinksView
           link: https://drive.google.com/file/d/1k6yMOh1O1ZD-zeOZoRhHJppSzaAPKi_x/view?usp=sharing
-          title: Check out the Peach Cobbler Recipe!
+          title: Peach Cobbler Recipe
 
         - type: LinksView
           link: https://drive.google.com/file/d/1XcaMGjhoivz7CRtsegcj3JyEcoZ1aaOQ/view?usp=sharing
-          title: ...And the Rice and Peas Recipe!
+          title: Rice and Peas Recipe
+
+        
 
     - title: Where are our AV Students From?
       description: The Amador community is so diverse; filled with different nationalities, ethnicities, and cultures that we are privileged to attend school with. To visually promote our diverse community, we have attached a link to a virtual map and a google form where you may submit virtual pins that show where you are from!
