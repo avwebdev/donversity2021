@@ -13,12 +13,14 @@ monday:
           title: Link to the art gallery!
 
     - title: Songs Represent AV Students!
-      description: Post a picture on your insta story of music that represents you, music you are currently listening to, or music that just makes you happy! We will compile all of the songs together into a playlist for you to listen to!
+      description: "Post a picture on your insta story of music that represents you, music you are currently listening to, or music that just makes you happy! We will compile all of the songs together into a playlist for you to listen to! Edit: Here's the playlist!"
       link: /view/songs
       highlight: true
       imageUrl: songs.jpg
       content:
-
+        - type: LinksView
+          link: https://open.spotify.com/playlist/3wyRdOPCW3pRMyRPegFRmQ?si=xOgJpRwFS0-JNR_Gz2HxFg&nd=1
+          title: Check out the AV Playlist!
 tuesday:
   motto: Better Together but still UnDONe
   dayName: Tuesday
