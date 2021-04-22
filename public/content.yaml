@@ -88,12 +88,26 @@ thursday:
       highlight: true
       content:
 
+        - type: LinksView
+          link: https://drive.google.com/file/d/1k6yMOh1O1ZD-zeOZoRhHJppSzaAPKi_x/view?usp=sharing
+          title: Check out the Peach Cobbler Recipe!
+
+        - type: LinksView
+          link: https://drive.google.com/file/d/1XcaMGjhoivz7CRtsegcj3JyEcoZ1aaOQ/view?usp=sharing
+          title: ...And the Rice and Peas Recipe!
+
     - title: Where are our AV Students From?
       description: The Amador community is so diverse; filled with different nationalities, ethnicities, and cultures that we are privileged to attend school with. To visually promote our diverse community, we have attached a link to a virtual map and a google form where you may submit virtual pins that show where you are from!
       link: "/view/virtual-map"
       imageUrl: virtual-map.jpeg
       highlight: true
       content:
+        - type: MarkdownView
+          link: map
+
+        - type: LinksView
+          link: https://forms.gle/tziZJn8irupCusQGA
+          title: Where are you from? Click here to put your pin on the map.
 
 friday:
   motto: Better Together as Dons
