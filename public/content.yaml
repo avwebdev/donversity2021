@@ -141,6 +141,10 @@ friday:
       highlight: true
       imageUrl: rally.jpeg
       content:
+        - type: MediaView
+          link: https://www.youtube.com/embed/jlcSY8Pi_u0
+          contentType: yt-video
+          description: The Donversity Rally Video!!
 
     - title: Don Deckout!
       highlight: true
@@ -148,6 +152,10 @@ friday:
       link: "/view/deckout"
       imageUrl: deckout.jpeg
       content:
+        - type: MediaView
+          contentType: image
+          link: deckout.jpeg
+
 
 clubs:
   - name: Key Club
