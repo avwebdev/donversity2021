@@ -37,12 +37,12 @@ if (today.getFullYear() === 2021 && today.getMonth() === 3) {
       break;
 
     default:
-      currentDay = "monday";
-      currentDayIndex = 0;
+      currentDay = "friday";
+      currentDayIndex = 4;
   }
 } else {
-  currentDay = "monday";
-  currentDayIndex = 0;
+  currentDay = "friday";
+  currentDayIndex = 4;
 }
 
 export function isFuture(day: string) {
